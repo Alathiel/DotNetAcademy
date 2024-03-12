@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|c:\\users\\betacom\\source\\repos\\startacademy\\startacademy\\weekone\\blogic\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|solutionrelative:startacademy\\weekone\\blogic\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|c:\\users\\betacom\\source\\repos\\startacademy\\startacademy\\weekone\\datamodels\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|solutionrelative:startacademy\\weekone\\datamodels\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|c:\\users\\betacom\\source\\repos\\startacademy\\startacademy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|solutionrelative:startacademy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|c:\\users\\betacom\\source\\repos\\startacademy\\startacademy\\weekone\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|solutionrelative:startacademy\\weekone\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|c:\\users\\betacom\\source\\repos\\startacademy\\startacademy\\weekone\\monday11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA9E920B-DB1C-4279-A195-CE5C4C3D3409}|StartAcademy\\StartAcademy.csproj|solutionrelative:startacademy\\weekone\\monday11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\Program.cs",
+              "RelativeDocumentMoniker": "StartAcademy\\Program.cs",
+              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\Program.cs",
+              "RelativeToolTip": "StartAcademy\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T11:39:24.479Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentManager.cs",
+              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\WeekOne\\BLogic\\StudentManager.cs",
+              "RelativeDocumentMoniker": "StartAcademy\\WeekOne\\BLogic\\StudentManager.cs",
+              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\WeekOne\\BLogic\\StudentManager.cs",
+              "RelativeToolTip": "StartAcademy\\WeekOne\\BLogic\\StudentManager.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAuwD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T14:13:03.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\WeekOne\\DataModels\\Student.cs",
+              "RelativeDocumentMoniker": "StartAcademy\\WeekOne\\DataModels\\Student.cs",
+              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\WeekOne\\DataModels\\Student.cs",
+              "RelativeToolTip": "StartAcademy\\WeekOne\\DataModels\\Student.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswA0AAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T11:46:06.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\WeekOne\\Menu.cs",
+              "RelativeDocumentMoniker": "StartAcademy\\WeekOne\\Menu.cs",
+              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\WeekOne\\Menu.cs",
+              "RelativeToolTip": "StartAcademy\\WeekOne\\Menu.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwC8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T11:43:54.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Monday11.cs",
+              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\WeekOne\\Monday11.cs",
+              "RelativeDocumentMoniker": "StartAcademy\\WeekOne\\Monday11.cs",
+              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\StartAcademy\\StartAcademy\\WeekOne\\Monday11.cs",
+              "RelativeToolTip": "StartAcademy\\WeekOne\\Monday11.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T10:54:27.533Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
