@@ -12,3 +12,4 @@ C:\Users\Betacom\source\repos\Student_Project\Student_Project\obj\Debug\net8.0\r
 C:\Users\Betacom\source\repos\Student_Project\Student_Project\obj\Debug\net8.0\Student_Project.pdb
 C:\Users\Betacom\source\repos\Student_Project\Student_Project\obj\Debug\net8.0\Student_Project.genruntimeconfig.cache
 C:\Users\Betacom\source\repos\Student_Project\Student_Project\obj\Debug\net8.0\ref\Student_Project.dll
+C:\Users\Betacom\source\repos\Student_Project\Student_Project\obj\Debug\net8.0\Student_Project.sourcelink.json

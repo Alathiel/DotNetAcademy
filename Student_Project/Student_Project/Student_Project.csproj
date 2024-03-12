@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="BLogic\" />
-    <Folder Include="DataModels\" />
   </ItemGroup>
 
 </Project>

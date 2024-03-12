@@ -1,52 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Metrics;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
-internal class Student
+using System.Threading.Tasks;
+
+internal class StudentHelper
 {
-    [Key] // chiave unica
-    public int Id { get; set; }
-    [Required(ErrorMessage = "Errore, Nome obbligatoriamente di almeno 3 caratteri e massimo di 30!")] // va inserito per forza
-    [MaxLength(30), MinLength(3)]
-    public string? FirstName { get; set; } = string.Empty;
-    public string? MiddleName { get; set; }
-    [Required]
-    [MaxLength(30)]
-    public string? LastName { get; set; }
-    [RegularExpression("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$")]
-    public string? Email { get; set; }
-    public string? Phone { get; set; }
-    [Required]
-    [Range(18, 120)]
-    public int Age { get; set; }
-    [Required]
-    public string? Degree { get; set; }
-
-    internal Student()
-    {
-        Id = 0;
-        FirstName = string.Empty;
-        MiddleName = string.Empty;
-        LastName = string.Empty;
-        Email = string.Empty;
-        Phone = string.Empty;
-        Age = 0;
-        Degree = string.Empty;
-    }
-
-    internal Student(string FirstName, string MiddleName, string LastName, string Email, string Phone, int Age, string Degree)
-    {
-        Id = 0;
-        this.FirstName = FirstName;
-        this.MiddleName = MiddleName;
-        this.LastName = LastName;
-        this.Email = Email;
-        this.Phone = Phone;
-        this.Age = Age;
-        this.Degree = Degree;
-    }
+    
+    static List<Student> students { get; set; } = [];// nuovo metodo di implementazione, vecchio -> new List<Student>();
 
     #region Metodi public
-    internal static void Insert(Student studentNew)
+    internal void Insert()
     {
         int counterId = 0;
         ConsoleKeyInfo temp;
@@ -54,6 +20,7 @@ internal class Student
         {
             do
             {
+                Student studentNew = new Student();
                 Console.Clear();
                 Console.WriteLine("INSERIMENTO DATI STUDENTE");
                 studentNew.Id = counterId;
@@ -66,7 +33,7 @@ internal class Student
                         Console.WriteLine("Inserisci un nome compreso tra i 3 e i 30 caratteri.");
                 } while (studentNew.FirstName.Length < 3 || studentNew.FirstName.Length > 30);
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //insert middle name
@@ -85,7 +52,7 @@ internal class Student
                 } while (temp.Key.ToString().ToLower() != "y" && temp.Key.ToString().ToLower() != "n");
 
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //Insert last name
@@ -99,7 +66,7 @@ internal class Student
                     }
                 } while (studentNew.FirstName.Length > 30);
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
 
@@ -117,7 +84,7 @@ internal class Student
                     }
                 } while (!match.Success);
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //Insert phone
@@ -125,7 +92,7 @@ internal class Student
                 Console.Write("\nNumero di telefono: ");
                 studentNew.Phone = Console.ReadLine();
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //Insert age
@@ -139,13 +106,14 @@ internal class Student
                     }
                 } while (studentNew.Age < 18 || studentNew.Age > 120);
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //insert degree
                 Console.Write("\nTitolo di studio: ");
                 studentNew.Degree = Console.ReadLine();
 
+                students.Add(studentNew);
                 //continue insert
                 do
                 {
@@ -154,6 +122,7 @@ internal class Student
                     if (temp.Key.ToString().ToLower() != "y" && temp.Key.ToString().ToLower() != "n")
                         Console.WriteLine("\n\nInserisci uno dei due valori permessi.");
                 } while (temp.Key.ToString().ToLower() != "y" && temp.Key.ToString().ToLower() != "n");
+
 
                 if (temp.Key.ToString().ToLower() != "y")
                     counterId++;
@@ -167,7 +136,7 @@ internal class Student
         }
     }
 
-    internal static void InsertValidation(Student studentNew)
+    internal void InsertValidation(Student studentNew)
     {
         ConsoleKeyInfo temp;
         try
@@ -180,9 +149,9 @@ internal class Student
                 //insert name
                 Console.Write("Nome: ");
                 studentNew.FirstName = Console.ReadLine();
-                   
 
-                if (!studentNew.ContinueInsert())
+
+                if (!ContinueInsert())
                     break;
 
                 //insert middle name
@@ -200,15 +169,15 @@ internal class Student
                     }
                 } while (temp.Key.ToString().ToLower() != "y" && temp.Key.ToString().ToLower() != "n");
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //Insert last name
-                
+
                 Console.Write("\nCognome: ");
                 studentNew.LastName = Console.ReadLine();
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
 
@@ -216,7 +185,7 @@ internal class Student
                 Console.Write("\nEmail: ");
                 studentNew.Email = Console.ReadLine();
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //Insert phone
@@ -224,21 +193,21 @@ internal class Student
                 Console.Write("\nNumero di telefono: ");
                 studentNew.Phone = Console.ReadLine();
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //Insert age
                 Console.Write("\nEtà: ");
                 studentNew.Age = Convert.ToInt16(Console.ReadLine());
 
-                if (!studentNew.ContinueInsert())
+                if (!ContinueInsert())
                     break;
 
                 //insert degree
                 Console.Write("\nTitolo di studio: ");
                 studentNew.Degree = Console.ReadLine();
 
-                if (studentNew.ValidatorDatas(studentNew))
+                if (ValidatorDatas(studentNew))
                     Console.WriteLine("Dati inseriti con successo.");
                 else Console.WriteLine("Dati non inseriti per via di un errore.");
                 //continue insert
@@ -258,11 +227,68 @@ internal class Student
             Console.ReadKey();
         }
     }
+    
+    internal void Show()
+    {
+        students.ForEach(student =>
+        {
+            Console.Clear();
+            Console.WriteLine("Studenti Inseriti\n\n");
+            Console.WriteLine($"Nome: {student.FirstName}\nSecondo nome: {student.MiddleName}\nCognome: {student.LastName}" +
+            $"\nEmail: {student.Email}\nPhone: {student.Phone}\nAge: {student.Age}\nDegree: {student.Degree}");
+        }
+        );
+    }
+
+    internal bool Delete(Student student)
+    {
+        return students.Remove(student);
+    }
+
+    internal bool Delete(string FirstName, string LastName)
+    {
+        Student student = students.Find(s => s.FirstName.ToLower() == FirstName.ToLower() && s.LastName.ToLower() == LastName.ToLower());
+        if (student != null)
+        {
+            students.Remove(student);
+            return true;
+        }
+        else
+            return false;
+    }
+
+    internal bool Search(string FirstName, string LastName)
+    {
+        Student student = students.Find(s => s.FirstName.ToLower() == FirstName.ToLower() && s.LastName.ToLower() == LastName.ToLower());
+        if (student == null)
+        {
+            Console.WriteLine("Lo studente cercato non è presente.");
+            return false;
+        }
+        else
+        {
+            Console.WriteLine("\nDati dello/degli studenti trovati\n\n");
+            Console.WriteLine($"Nome: {student.FirstName}\nSecondo nome: {student.MiddleName}\nCognome: {student.LastName}" +
+            $"\nEmail: {student.Email}\nPhone: {student.Phone}\nAge: {student.Age}\nDegree: {student.Degree}");
+        }
+        return true;
+    }
+
+    public static int CreateKey()
+    {
+        Random rnd = new Random();
+        do
+        {
+            int tempId = rnd.Next();
+            if (students.Find(s => s.Id == tempId) != null)
+                return tempId;
+        } while (true);
+    }
 
     #endregion
 
     #region Metodi private
-    private bool ContinueInsert()
+    private static bool ContinueInsert()
     {
         ConsoleKeyInfo temp;
         do
@@ -271,7 +297,7 @@ internal class Student
             temp = Console.ReadKey();
             if (temp.Key.ToString().ToLower() != "y" && temp.Key.ToString().ToLower() != "n")
                 Console.WriteLine("\nErrore, inserisci uno dei due valori richiesti.");
-            else if(temp.Key.ToString().ToLower() == "n")
+            else if (temp.Key.ToString().ToLower() == "n")
                 return false;
         } while (temp.Key.ToString().ToLower() != "y" && temp.Key.ToString().ToLower() != "n");
 
@@ -279,7 +305,7 @@ internal class Student
     }
 
 
-    private bool ValidatorDatas(Student student)
+    private static bool ValidatorDatas(Student student)
     {
         var context = new ValidationContext(student, serviceProvider: null, items: null);
         var results = new List<ValidationResult>();
@@ -299,4 +325,3 @@ internal class Student
 
     #endregion
 }
-
