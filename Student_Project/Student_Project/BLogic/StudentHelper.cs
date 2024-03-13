@@ -9,12 +9,11 @@ using System.Threading.Tasks;
 internal class StudentHelper
 {
     
-    static List<Student> students { get; set; } = [];// nuovo metodo di implementazione, vecchio -> new List<Student>();
+    public static List<Student> students { get; set; } = [];// nuovo metodo di implementazione, vecchio -> new List<Student>();
 
     #region Metodi public
     internal void Insert()
     {
-        int counterId = 0;
         ConsoleKeyInfo temp;
         try
         {
@@ -23,7 +22,6 @@ internal class StudentHelper
                 Student studentNew = new Student();
                 Console.Clear();
                 Console.WriteLine("INSERIMENTO DATI STUDENTE");
-                studentNew.Id = counterId;
                 //insert name
                 do
                 {
@@ -33,8 +31,7 @@ internal class StudentHelper
                         Console.WriteLine("Inserisci un nome compreso tra i 3 e i 30 caratteri.");
                 } while (studentNew.FirstName.Length < 3 || studentNew.FirstName.Length > 30);
 
-                if (!ContinueInsert())
-                    break;
+                
 
                 //insert middle name
                 do
@@ -52,8 +49,7 @@ internal class StudentHelper
                 } while (temp.Key.ToString().ToLower() != "y" && temp.Key.ToString().ToLower() != "n");
 
 
-                if (!ContinueInsert())
-                    break;
+                
 
                 //Insert last name
                 do
@@ -66,8 +62,7 @@ internal class StudentHelper
                     }
                 } while (studentNew.FirstName.Length > 30);
 
-                if (!ContinueInsert())
-                    break;
+               
 
 
                 //insert email
@@ -84,16 +79,14 @@ internal class StudentHelper
                     }
                 } while (!match.Success);
 
-                if (!ContinueInsert())
-                    break;
+                
 
                 //Insert phone
 
                 Console.Write("\nNumero di telefono: ");
                 studentNew.Phone = Console.ReadLine();
 
-                if (!ContinueInsert())
-                    break;
+                
 
                 //Insert age
                 do
@@ -106,12 +99,11 @@ internal class StudentHelper
                     }
                 } while (studentNew.Age < 18 || studentNew.Age > 120);
 
-                if (!ContinueInsert())
-                    break;
+                
 
                 //insert degree
                 Console.Write("\nTitolo di studio: ");
-                studentNew.Degree = Console.ReadLine();
+                studentNew.Degree = (Enums.Degree)Enum.Parse(typeof(Enums.Degree),Console.ReadLine());
 
                 students.Add(studentNew);
                 //continue insert
@@ -123,10 +115,6 @@ internal class StudentHelper
                         Console.WriteLine("\n\nInserisci uno dei due valori permessi.");
                 } while (temp.Key.ToString().ToLower() != "y" && temp.Key.ToString().ToLower() != "n");
 
-
-                if (temp.Key.ToString().ToLower() != "y")
-                    counterId++;
-
             } while (temp.Key.ToString().ToLower() == "y");
         }
         catch (Exception e)
@@ -136,7 +124,7 @@ internal class StudentHelper
         }
     }
 
-    internal void InsertValidation(Student studentNew)
+    /*internal void InsertValidation(Student studentNew)
     {
         ConsoleKeyInfo temp;
         try
@@ -205,7 +193,7 @@ internal class StudentHelper
 
                 //insert degree
                 Console.Write("\nTitolo di studio: ");
-                studentNew.Degree = Console.ReadLine();
+                studentNew.Degree = (Enums.Degree)Enum.Parse(typeof(Enums.Degree), Console.ReadLine());
 
                 if (ValidatorDatas(studentNew))
                     Console.WriteLine("Dati inseriti con successo.");
@@ -226,61 +214,112 @@ internal class StudentHelper
             Console.WriteLine("Error on insert: " + e);
             Console.ReadKey();
         }
-    }
+    }*/
     
     internal void Show()
     {
-        students.ForEach(student =>
-        {
+        try {
             Console.Clear();
-            Console.WriteLine("Studenti Inseriti\n\n");
-            Console.WriteLine($"Nome: {student.FirstName}\nSecondo nome: {student.MiddleName}\nCognome: {student.LastName}" +
-            $"\nEmail: {student.Email}\nPhone: {student.Phone}\nAge: {student.Age}\nDegree: {student.Degree}");
+            if (students.Count() > 0) {
+                Console.WriteLine("Studenti Inseriti");
+                students.ForEach(student =>
+                {
+                    Console.WriteLine($"\n\nId: {student.Id}\nNome: {student.FirstName}\nSecondo nome: {student.MiddleName}\nCognome: {student.LastName}" +
+                    $"\nEmail: {student.Email}\nPhone: {student.Phone}\nAge: {student.Age}\nDegree: {student.Degree}");
+                });
+            }
+            else
+                Console.WriteLine("Non hai ancora inserito studenti.");
         }
-        );
+        catch (Exception e) 
+        { 
+            Console.WriteLine(e); 
+            Console.ReadLine(); 
+        }
     }
 
-    internal bool Delete(Student student)
+    internal bool Delete(string FirstName, string LastName, string Age)
     {
-        return students.Remove(student);
-    }
+        List<Student> tempStudents = checkSearchString(FirstName, LastName, Age);
 
-    internal bool Delete(string FirstName, string LastName)
-    {
-        Student student = students.Find(s => s.FirstName.ToLower() == FirstName.ToLower() && s.LastName.ToLower() == LastName.ToLower());
-        if (student != null)
+        if (tempStudents.Count > 0)
         {
-            students.Remove(student);
+            tempStudents.ForEach(s=> 
+                {
+                    students.Remove(s);
+                }
+            );
+            
             return true;
         }
         else
             return false;
     }
 
-    internal bool Search(string FirstName, string LastName)
+    internal void Search(string FirstName, string LastName, string Age = "0")
     {
-        Student student = students.Find(s => s.FirstName.ToLower() == FirstName.ToLower() && s.LastName.ToLower() == LastName.ToLower());
-        if (student == null)
+        try
         {
-            Console.WriteLine("Lo studente cercato non è presente.");
-            return false;
-        }
-        else
+            List<Student> tempStudents = checkSearchString(FirstName, LastName, Age);
+            
+
+            if (tempStudents.Count() == 0)
+            {
+                Console.WriteLine("Lo/Gli studente/i cercato non è/sono presente/i.");
+            }
+            else
+            {
+                Console.WriteLine("Dati degli studenti cercati");
+                tempStudents.ForEach(student =>
+                {
+                    Console.WriteLine($"\n\nId: {student.Id}\nNome: {student.FirstName}\nSecondo nome: {student.MiddleName}\nCognome: {student.LastName}" +
+                    $"\nEmail: {student.Email}\nPhone: {student.Phone}\nAge: {student.Age}\nDegree: {student.Degree}");
+                });
+            }
+
+        }catch (Exception e)
         {
-            Console.WriteLine("\nDati dello/degli studenti trovati\n\n");
-            Console.WriteLine($"Nome: {student.FirstName}\nSecondo nome: {student.MiddleName}\nCognome: {student.LastName}" +
-            $"\nEmail: {student.Email}\nPhone: {student.Phone}\nAge: {student.Age}\nDegree: {student.Degree}");
+            Console.WriteLine(e);
         }
-        return true;
     }
 
+    /*internal void Search(List <string> datas)
+    {
+        try
+        {
+            List<Student> tempStudents = students.FindAll(s => s.FirstName.ToLower() == FirstName.ToLower() && s.LastName.ToLower() == LastName.ToLower());
+            if (tempStudents.Count() == 0)
+            {
+                Console.WriteLine("Lo/Gli studente/i cercato non è/sono presente/i.");
+            }
+            else
+            {
+                Console.WriteLine("Dati degli studenti cercati");
+                tempStudents.ForEach(student =>
+                {
+                    Console.WriteLine($"\n\nId: {student.Id}\nNome: {student.FirstName}\nSecondo nome: {student.MiddleName}\nCognome: {student.LastName}" +
+                    $"\nEmail: {student.Email}\nPhone: {student.Phone}\nAge: {student.Age}\nDegree: {student.Degree}");
+                });
+            }
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+    }*/
+    
+    #endregion
+
+
+    #region Metodi public
     public static int CreateKey()
     {
         Random rnd = new Random();
         do
         {
             int tempId = rnd.Next();
-            if (students.Find(s => s.Id == tempId) != null)
+            if (students.Find(s => s.Id == tempId) == null)
                 return tempId;
         } while (true);
     }
@@ -321,6 +360,72 @@ internal class StudentHelper
             }
             return false;
         }
+    }
+
+    /// <summary>
+    /// Check input string for search
+    /// </summary>
+    /// <param name="FirstName"></param>
+    /// <param name="LastName"></param>
+    /// <param name="Age"></param>
+    /// <returns></returns>
+    private List<Student> checkSearchString(string FirstName, string LastName, string Age)
+    {
+        bool checkAge = true;
+
+        if (string.IsNullOrEmpty(Age))
+            checkAge = false;
+        else
+        {
+            foreach (char a in Age)
+            {
+                if (char.IsLetter(a))
+                {
+                    Console.WriteLine("L'eta' inserita non e' valida, verra' eseguita la ricerca con gli altri valori inseriti.");
+                    checkAge = false;
+                    break;
+                }
+            }
+        }
+
+        if (string.IsNullOrEmpty(FirstName))
+        {
+            if (string.IsNullOrEmpty(LastName))
+            {
+                if (checkAge)
+                    return students.FindAll(s => s.Age == Convert.ToInt16(Age));
+                else
+                    Console.WriteLine("\nNon sono stati inseriti dati validi per eseguire la ricerca.");
+            }
+
+            else
+            {
+                if (checkAge)
+                    return students.FindAll(s => s.LastName.ToLower() == LastName.ToLower() && s.Age == Convert.ToInt16(Age));
+                else
+                    return students.FindAll(s => s.LastName.ToLower() == LastName.ToLower());
+            }
+        }
+        else
+        {
+            if (string.IsNullOrEmpty(LastName))
+            {
+                if (checkAge)
+                    return students.FindAll(s => s.FirstName.ToLower() == FirstName.ToLower() && s.Age == Convert.ToInt16(Age));
+                else
+                    return students.FindAll(s => s.FirstName.ToLower() == FirstName.ToLower());
+            }
+
+            else
+            {
+                if (checkAge)
+                    return students.FindAll(s => s.FirstName.ToLower() == FirstName.ToLower() && s.LastName.ToLower() == LastName.ToLower() && s.Age == Convert.ToInt16(Age));
+                else
+                    return students.FindAll(s => s.FirstName.ToLower() == FirstName.ToLower() && s.LastName.ToLower() == LastName.ToLower());
+            }
+        }
+
+        return [];
     }
 
     #endregion

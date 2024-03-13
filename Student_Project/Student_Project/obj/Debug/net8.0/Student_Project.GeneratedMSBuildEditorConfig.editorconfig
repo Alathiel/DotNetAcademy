@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Student_Project
-build_property.ProjectDir = C:\Users\Betacom\source\repos\Student_Project\Student_Project\
+build_property.ProjectDir = F:\Projects\DotNetAcademy\Student_Project\Student_Project\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

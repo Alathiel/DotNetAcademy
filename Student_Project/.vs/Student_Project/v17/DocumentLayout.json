@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Betacom\\source\\repos\\Student_Project\\",
+  "WorkspaceRootPath": "F:\\Projects\\DotNetAcademy\\Student_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|c:\\users\\betacom\\source\\repos\\student_project\\student_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|c:\\users\\betacom\\source\\repos\\student_project\\student_project\\studenthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\studenthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\blogic\\studenthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\blogic\\studenthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|c:\\users\\betacom\\source\\repos\\student_project\\student_project\\datamodels\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\datamodels\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\datamodels\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\datamodels\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\datamodels\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,44 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\Student_Project\\Student_Project\\StudentHelper.cs",
-              "RelativeDocumentMoniker": "Student_Project\\StudentHelper.cs",
-              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\Student_Project\\Student_Project\\StudentHelper.cs",
-              "RelativeToolTip": "Student_Project\\StudentHelper.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA4AAAAaAAAA",
+              "DocumentIndex": 3,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\DataModels\\Enums.cs",
+              "RelativeDocumentMoniker": "Student_Project\\DataModels\\Enums.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\DataModels\\Enums.cs",
+              "RelativeToolTip": "Student_Project\\DataModels\\Enums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBIAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T14:46:08.349Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-03-13T08:58:10.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\Student_Project\\Student_Project\\DataModels\\Enums.cs",
-              "RelativeDocumentMoniker": "Student_Project\\DataModels\\Enums.cs",
-              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\Student_Project\\Student_Project\\DataModels\\Enums.cs",
-              "RelativeToolTip": "Student_Project\\DataModels\\Enums.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
+              "Title": "Student.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\DataModels\\Student.cs",
+              "RelativeDocumentMoniker": "Student_Project\\DataModels\\Student.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\DataModels\\Student.cs",
+              "RelativeToolTip": "Student_Project\\DataModels\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T15:50:18.468Z",
+              "WhenOpened": "2024-03-13T09:00:38.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentHelper.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\BLogic\\StudentHelper.cs",
+              "RelativeDocumentMoniker": "Student_Project\\BLogic\\StudentHelper.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\BLogic\\StudentHelper.cs",
+              "RelativeToolTip": "Student_Project\\BLogic\\StudentHelper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAPAAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T08:35:35.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\Student_Project\\Student_Project\\Menu.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\Menu.cs",
               "RelativeDocumentMoniker": "Student_Project\\Menu.cs",
-              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\Student_Project\\Student_Project\\Menu.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\Menu.cs",
               "RelativeToolTip": "Student_Project\\Menu.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAAB0AAAAYAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wFcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T09:01:36.127Z",
               "EditorCaption": ""

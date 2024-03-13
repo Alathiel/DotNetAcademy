@@ -17,7 +17,7 @@ internal class Student
     [Range(18, 120)]
     public int Age { get; set; }
     [Required]
-    public string? Degree { get; set; }
+    public Enums.Degree Degree { get; set; }
 
     internal Student()
     {
@@ -28,7 +28,7 @@ internal class Student
         Email = string.Empty;
         Phone = string.Empty;
         Age = 0;
-        Degree = string.Empty;
+        Degree = Enums.Degree.Nessuno;
     }
 
     internal Student(string FirstName, string MiddleName, string LastName, string Email, string Phone, int Age, string Degree)
@@ -40,7 +40,7 @@ internal class Student
         this.Email = Email;
         this.Phone = Phone;
         this.Age = Age;
-        this.Degree = Degree;
+        this.Degree = Enums.Degree.Nessuno;
     }
 
 }
