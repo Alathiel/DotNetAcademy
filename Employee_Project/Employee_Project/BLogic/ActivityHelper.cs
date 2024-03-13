@@ -20,8 +20,8 @@ namespace Employee_Project.BLogic
                         Activity activity = new Activity();
 
                         activity.Date = DateOnly.ParseExact(tempArray[0], "dd/mm/yyyy");
-                        activity.Title = tempArray[1];
-                        activity.Idk = Convert.ToInt32(tempArray[2]);
+                        activity.Type = tempArray[1];
+                        activity.Hours = Convert.ToInt32(tempArray[2]);
                         activity.WorkerId = tempArray[3];
 
                         Employee employee = employees.Find(e => e.Id == activity.WorkerId);

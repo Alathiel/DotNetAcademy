@@ -9,8 +9,8 @@ namespace Employee_Project.DataModels
     internal class Activity
     {
         internal DateOnly? Date { get; set; }
-        internal string? Title { get; set; } 
-        internal int? Idk { get; set; }
+        internal string? Type { get; set; } 
+        internal int? Hours { get; set; }
         internal string? WorkerId { get; set; }
 
     }

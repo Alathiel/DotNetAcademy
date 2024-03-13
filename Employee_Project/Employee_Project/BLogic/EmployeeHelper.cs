@@ -22,10 +22,10 @@ namespace Employee_Project.BLogic
                     employee.JobRole = tempArray[2];
                     employee.Office = tempArray[3];
                     employee.Age = tempArray[4];
-                    employee.Sede = tempArray[5];
+                    employee.Address = tempArray[5];
                     employee.City = tempArray[6];
-                    employee.provincia = tempArray[7];
-                    employee.Cap = tempArray[8];
+                    employee.Province = tempArray[7];
+                    employee.CAP = tempArray[8];
                     employee.Matricola = Convert.ToInt32(tempArray[9]);
 
                     importedEmployees.Add(employee);
@@ -40,13 +40,13 @@ namespace Employee_Project.BLogic
             Console.WriteLine("I lavoratori presenti nella lista sono i seguenti");
             employees.ForEach(e =>
                 {
-                    Console.WriteLine($"\n\nId: {e.Id}\nFull name: {e.FullName}\nJob role: {e.JobRole}\nOffice: {e.Office}\nAge: {e.Age}\nLocation: {e.Sede}\nCity: {e.City}\nProvincia: {e.provincia}\nCAP: {e.Cap}\nMatricola {e.Matricola}");
+                    Console.WriteLine($"\n\nId: {e.Id}\nFull name: {e.FullName}\nJob role: {e.JobRole}\nOffice: {e.Office}\nAge: {e.Age}\nAddress: {e.Address}\nCity: {e.City}\nProvince: {e.Province}\nCAP: {e.CAP}\nMatricola {e.Matricola}");
                     if (e.Activities.Count >0)
                     {
                         Console.WriteLine("\nAttivita' del lavoratore:");
                         e.Activities.ForEach(a =>
                         {
-                            Console.WriteLine($"\nData: {a.Date}\nTitle: {a.Title}\nIDK: {a.Idk}\nWorker Id: {a.WorkerId}");
+                            Console.WriteLine($"\nData: {a.Date}\nType: {a.Type}\nHours: {a.Hours}\nWorker Id: {a.WorkerId}");
                         });
                     }
                 }

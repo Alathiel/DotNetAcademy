@@ -15,10 +15,10 @@ namespace Employee_Project.DataModels
         internal string? JobRole { get; set; }
         internal string? Office { get; set; }
         internal string? Age { get; set; }
-        internal string? Sede { get; set; }
+        internal string? Address { get; set; }
         internal string? City { get; set; }
-        internal string? provincia { get; set; }
-        internal string? Cap {  get; set; }
+        internal string? Province { get; set; }
+        internal string? CAP {  get; set; }
         internal int? Matricola { get; set; }
         internal List<Activity> Activities { get; set; } = [];
 
