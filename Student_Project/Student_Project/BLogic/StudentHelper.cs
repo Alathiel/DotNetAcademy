@@ -313,6 +313,7 @@ internal class StudentHelper
 
 
     #region Metodi public
+
     public static int CreateKey()
     {
         Random rnd = new Random();
@@ -342,7 +343,6 @@ internal class StudentHelper
 
         return true;
     }
-
 
     private static bool ValidatorDatas(Student student)
     {

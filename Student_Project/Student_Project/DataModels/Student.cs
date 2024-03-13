@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
 internal class Student
 {
     [Key] // chiave unica
-    public int Id { get; set; }
+    public int Id { get; }
     [Required(ErrorMessage = "Errore, Nome obbligatoriamente di almeno 3 caratteri e massimo di 30!")] // va inserito per forza
     [MaxLength(30), MinLength(3)]
     public string? FirstName { get; set; } = string.Empty;
@@ -18,6 +19,7 @@ internal class Student
     public int Age { get; set; }
     [Required]
     public Enums.Degree Degree { get; set; }
+    public List<Activity> Activities { get; set; } = [];
 
     internal Student()
     {
@@ -29,6 +31,7 @@ internal class Student
         Phone = string.Empty;
         Age = 0;
         Degree = Enums.Degree.Nessuno;
+        Activities = [];
     }
 
     internal Student(string FirstName, string MiddleName, string LastName, string Email, string Phone, int Age, string Degree)
@@ -41,6 +44,7 @@ internal class Student
         this.Phone = Phone;
         this.Age = Age;
         this.Degree = Enums.Degree.Nessuno;
+        Activities = [];
     }
 
 }

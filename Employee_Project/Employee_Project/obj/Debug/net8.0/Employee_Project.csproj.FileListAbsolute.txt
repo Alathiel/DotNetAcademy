@@ -1,0 +1,15 @@
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\Employee_Project.exe
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\Employee_Project.deps.json
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\Employee_Project.runtimeconfig.json
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\Employee_Project.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\Employee_Project.pdb
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.AssemblyInfoInputs.cache
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.AssemblyInfo.cs
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.csproj.CoreCompileInputs.cache
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.sourcelink.json
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\refint\Employee_Project.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.pdb
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.genruntimeconfig.cache
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\ref\Employee_Project.dll
