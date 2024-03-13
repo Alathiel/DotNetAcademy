@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "F:\\Projects\\DotNetAcademy\\Student_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\blogic\\studenthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\blogic\\studenthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\datamodels\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\datamodels\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\blogic\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\blogic\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|solutionrelative:student_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{181D65AD-8D44-47B2-B7E4-F445EC1CCD4C}|Student_Project\\Student_Project.csproj|f:\\projects\\dotnetacademy\\student_project\\student_project\\datamodels\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentHelper.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\BLogic\\StudentHelper.cs",
+              "RelativeDocumentMoniker": "Student_Project\\BLogic\\StudentHelper.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\BLogic\\StudentHelper.cs",
+              "RelativeToolTip": "Student_Project\\BLogic\\StudentHelper.cs",
+              "ViewState": "AQIAAEgBAAAAAAAAAAAcwHcBAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T11:40:18.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileHelper.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\BLogic\\FileHelper.cs",
+              "RelativeDocumentMoniker": "Student_Project\\BLogic\\FileHelper.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\BLogic\\FileHelper.cs",
+              "RelativeToolTip": "Student_Project\\BLogic\\FileHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T11:29:38.855Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -44,38 +70,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Student.cs",
-              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\DataModels\\Student.cs",
-              "RelativeDocumentMoniker": "Student_Project\\DataModels\\Student.cs",
-              "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\DataModels\\Student.cs",
-              "RelativeToolTip": "Student_Project\\DataModels\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T09:00:38.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentHelper.cs",
-              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\BLogic\\StudentHelper.cs",
-              "RelativeDocumentMoniker": "Student_Project\\BLogic\\StudentHelper.cs",
-              "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\BLogic\\StudentHelper.cs",
-              "RelativeToolTip": "Student_Project\\BLogic\\StudentHelper.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAPAAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T08:35:35.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Menu.cs",
               "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\Menu.cs",
               "RelativeDocumentMoniker": "Student_Project\\Menu.cs",
               "ToolTip": "F:\\Projects\\DotNetAcademy\\Student_Project\\Student_Project\\Menu.cs",
               "RelativeToolTip": "Student_Project\\Menu.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wFcAAAAFAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwEEAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T09:01:36.127Z",
               "EditorCaption": ""

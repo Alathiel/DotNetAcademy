@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Project.BLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,9 @@ namespace Student_Project
     {
         internal static void Show()
         {
-            string? tempFirstName = string.Empty, tempLastName = string.Empty, tempAge;
-            StudentHelper manager = new();
+            string? tempFirstName = string.Empty, tempLastName = string.Empty, tempAge = string.Empty, tempId = string.Empty;
+            StudentHelper studentsManager = new();
+            FileHelper fileManager = new FileHelper();
             ConsoleKeyInfo menuChoice;
 
             try
@@ -33,11 +35,11 @@ namespace Student_Project
                     switch ((Enums.Menu)menuChoice.Key)
                     {
                         case Enums.Menu.Inserimento:
-                            manager.Insert();
+                            studentsManager.Insert();
                             break;
 
                         case Enums.Menu.Visualizzazione:
-                            manager.Show();
+                            studentsManager.Show();
                             Console.ReadLine();
                             break;
 
@@ -48,6 +50,8 @@ namespace Student_Project
                             //string st = Console.ReadLine();
                             //List<string> tempString = st.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList();
                             Console.WriteLine("Inserisci i dati dello/degli studenti cercati, per i dati non interessati premere semplicemente invio.");
+                            Console.Write("Id: ");
+                            tempId = Console.ReadLine();
                             Console.Write("Nome: ");
                             tempFirstName = Console.ReadLine();
                             Console.Write("Cognome: ");
@@ -55,13 +59,15 @@ namespace Student_Project
                             Console.Write("Eta': ");
                             tempAge = Console.ReadLine();
 
-                            manager.Search(tempFirstName, tempLastName, tempAge);
+                            studentsManager.Search(tempFirstName, tempLastName, tempAge, tempId);
                             Console.ReadLine();
                             break;
 
                         case Enums.Menu.Eliminazione:
                             Console.Clear();
-                            Console.WriteLine("Inserisci i dati dello/degli da eliminare");
+                            Console.WriteLine("Inserisci i dati dello/degli studente/i da eliminare");
+                            Console.Write("Id: ");
+                            tempId = Console.ReadLine();
                             Console.Write("Nome: ");
                             tempFirstName = Console.ReadLine();
                             Console.Write("Cognome: ");
@@ -69,7 +75,8 @@ namespace Student_Project
                             Console.Write("Eta': ");
                             tempAge = Console.ReadLine();
 
-                            if (manager.Delete(tempFirstName, tempLastName, tempAge))
+
+                            if (studentsManager.Delete(tempFirstName, tempLastName, tempAge, tempId))
                                 Console.WriteLine("Eliminazione completata con successo.");
                             else Console.WriteLine("Eliminazione fallita.");
 

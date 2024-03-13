@@ -238,9 +238,9 @@ internal class StudentHelper
         }
     }
 
-    internal bool Delete(string FirstName, string LastName, string Age)
+    internal bool Delete(string FirstName, string LastName, string Age, string Id)
     {
-        List<Student> tempStudents = checkSearchString(FirstName, LastName, Age);
+        List<Student> tempStudents = checkSearchString(FirstName, LastName, Age, Id);
 
         if (tempStudents.Count > 0)
         {
@@ -256,11 +256,11 @@ internal class StudentHelper
             return false;
     }
 
-    internal void Search(string FirstName, string LastName, string Age = "0")
+    internal void Search(string FirstName, string LastName, string Age, string Id)
     {
         try
         {
-            List<Student> tempStudents = checkSearchString(FirstName, LastName, Age);
+            List<Student> tempStudents = checkSearchString(FirstName, LastName, Age, Id);
             
 
             if (tempStudents.Count() == 0)
@@ -369,9 +369,9 @@ internal class StudentHelper
     /// <param name="LastName"></param>
     /// <param name="Age"></param>
     /// <returns></returns>
-    private List<Student> checkSearchString(string FirstName, string LastName, string Age)
+    private List<Student> checkSearchString(string FirstName, string LastName, string Age, string Id)
     {
-        bool checkAge = true;
+        bool checkAge = true, checkId = true;
 
         if (string.IsNullOrEmpty(Age))
             checkAge = false;
@@ -388,22 +388,59 @@ internal class StudentHelper
             }
         }
 
+        if (string.IsNullOrEmpty(Id))
+            checkAge = false;
+        else
+        {
+            foreach (char a in Id)
+            {
+                if (char.IsLetter(a))
+                {
+                    Console.WriteLine("L'eta' inserita non e' valida, verra' eseguita la ricerca con gli altri valori inseriti.");
+                    checkId = false;
+                    break;
+                }
+            }
+        }
+
         if (string.IsNullOrEmpty(FirstName))
         {
             if (string.IsNullOrEmpty(LastName))
             {
                 if (checkAge)
-                    return students.FindAll(s => s.Age == Convert.ToInt16(Age));
+                {
+                    if(checkId)
+                        return students.FindAll(s => s.Age == Convert.ToInt16(Age) && s.Id == Convert.ToInt32(Id));
+                    else
+                        return students.FindAll(s => s.Age == Convert.ToInt16(Age));
+                }
                 else
-                    Console.WriteLine("\nNon sono stati inseriti dati validi per eseguire la ricerca.");
+                { 
+                    if (checkId)
+                        return students.FindAll(s => s.Id == Convert.ToInt32(Id));
+                    else
+                        Console.WriteLine("\nNon sono stati inseriti dati validi per eseguire la ricerca.");
+                }
             }
 
             else
             {
                 if (checkAge)
-                    return students.FindAll(s => s.LastName.ToLower() == LastName.ToLower() && s.Age == Convert.ToInt16(Age));
+                {
+                    if(checkId)
+                        return students.FindAll(s => s.LastName.ToLower() == LastName.ToLower() && s.Age == Convert.ToInt16(Age) && s.Id == Convert.ToInt32(Id));
+                    else
+                        return students.FindAll(s => s.LastName.ToLower() == LastName.ToLower() && s.Age == Convert.ToInt16(Age));
+                }
+
+                    
                 else
-                    return students.FindAll(s => s.LastName.ToLower() == LastName.ToLower());
+                {
+                    if (checkId)
+                        return students.FindAll(s => s.LastName.ToLower() == LastName.ToLower() && s.Id == Convert.ToInt32(Id));
+                    else
+                        return students.FindAll(s => s.LastName.ToLower() == LastName.ToLower());
+                }
             }
         }
         else
@@ -411,7 +448,7 @@ internal class StudentHelper
             if (string.IsNullOrEmpty(LastName))
             {
                 if (checkAge)
-                    return students.FindAll(s => s.FirstName.ToLower() == FirstName.ToLower() && s.Age == Convert.ToInt16(Age));
+                    return students.FindAll(s => s.FirstName.ToLower() == FirstName.ToLower() && s.Age == Convert.ToInt32(Age));
                 else
                     return students.FindAll(s => s.FirstName.ToLower() == FirstName.ToLower());
             }
