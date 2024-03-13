@@ -14,12 +14,14 @@ namespace Employee_Project.BLogic
         {
             List<Activity> importedActivities = [];
             try
-            { 
+            {
+                int counter = 0;
                 activities.ForEach(e =>
                     {
                         string[] tempArray = e.Split(';');
                         Activity activity = new Activity();
 
+                        activity.Id = counter;
                         activity.Date = DateOnly.ParseExact(tempArray[0], "dd/mm/yyyy");
                         activity.Type = tempArray[1];
                         activity.Hours = Convert.ToInt32(tempArray[2]);
@@ -31,6 +33,7 @@ namespace Employee_Project.BLogic
                             employee.Activities.Add(activity);
                         }
                         importedActivities.Add(activity);
+                        counter++;
                     }
                 );
             }catch (Exception e)

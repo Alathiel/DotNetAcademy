@@ -8,6 +8,7 @@ namespace Employee_Project.DataModels
 {
     internal class Activity
     {
+        internal int Id { get; set; }
         internal DateOnly? Date { get; set; }
         internal string? Type { get; set; } 
         internal int? Hours { get; set; }
