@@ -19,7 +19,7 @@ namespace Employee_Project.DataModels
         internal string? City { get; set; }
         internal string? Province { get; set; }
         internal string? CAP {  get; set; }
-        internal int? Matricola { get; set; }
+        internal int? Phone { get; set; }
         internal List<Activity> Activities { get; set; } = [];
 
     }

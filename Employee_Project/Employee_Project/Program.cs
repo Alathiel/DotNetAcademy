@@ -8,6 +8,7 @@ internal class Program{
         EmployeeHelper employeeHelper = new EmployeeHelper();
         ActivityHelper activityHelper = new ActivityHelper();
         List<Employee> employees = [];
+        List<Activity> activityList = [];
 
         try {
             //Console.WriteLine("Inserisci il percorso del file");
@@ -20,9 +21,11 @@ internal class Program{
                 List<string> tempActivities = File.ReadAllLines("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\EmployeesActivities.txt").ToList();
 
                 employees = employeeHelper.ImportEmployees(tempEmployees);
-                activityHelper.ImportActivities(tempActivities, employees);
+                activityList = activityHelper.ImportActivities(tempActivities, employees);
 
                 employeeHelper.ShowEmployeeList(employees);
+                activityHelper.ShowActivities(activityList);
+                
 
             }
             else

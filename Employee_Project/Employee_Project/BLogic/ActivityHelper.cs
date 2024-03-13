@@ -9,7 +9,8 @@ namespace Employee_Project.BLogic
 {
     internal class ActivityHelper
     {
-        internal void ImportActivities(List<string> activities, List<Employee> employees)
+        #region Public Methods
+        internal List<Activity> ImportActivities(List<string> activities, List<Employee> employees)
         {
             List<Activity> importedActivities = [];
             try
@@ -29,12 +30,26 @@ namespace Employee_Project.BLogic
                         {
                             employee.Activities.Add(activity);
                         }
+                        importedActivities.Add(activity);
                     }
                 );
             }catch (Exception e)
             {
                 Console.WriteLine(e);
             }
+            return importedActivities;
         }
+
+        internal void ShowActivities(List<Activity> activities)
+        {
+            Console.WriteLine("Attivita' presenti nella lista");
+            activities.ForEach(a =>
+                {
+                    Console.WriteLine($"\n\nData: {a.Date}\nType: {a.Type}\nHours: {a.Hours}\nWorker Id: {a.WorkerId}");
+                }
+            );
+        }
+
+        #endregion
     }
 }
