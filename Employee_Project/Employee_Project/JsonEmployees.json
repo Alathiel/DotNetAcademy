@@ -1,0 +1,241 @@
+[
+  {
+    "Id": "I001",
+    "FullName": "Mario Rossi",
+    "JobRole": "Impiegato",
+    "Office": "Ufficio Acquisti",
+    "Age": "49",
+    "Address": "Largo Uvia 69",
+    "City": "Roma",
+    "Province": "Roma",
+    "CAP": "00000",
+    "Phone": 123456789,
+    "Activities": [
+      {
+        "Id": 0,
+        "Date": "2023-01-07",
+        "Type": "Pre Festivo",
+        "Hours": 4,
+        "WorkerId": "I001"
+      },
+      {
+        "Id": 1,
+        "Date": "2023-01-09",
+        "Type": "Ufficio",
+        "Hours": 10,
+        "WorkerId": "I001"
+      },
+      {
+        "Id": 2,
+        "Date": "2023-01-10",
+        "Type": "Ufficio",
+        "Hours": 8,
+        "WorkerId": "I001"
+      },
+      {
+        "Id": 3,
+        "Date": "2023-01-11",
+        "Type": "Ferie",
+        "Hours": 4,
+        "WorkerId": "I001"
+      },
+      {
+        "Id": 4,
+        "Date": "2023-01-12",
+        "Type": "Ufficio",
+        "Hours": 8,
+        "WorkerId": "I001"
+      },
+      {
+        "Id": 5,
+        "Date": "2023-01-13",
+        "Type": "Ufficio",
+        "Hours": 9,
+        "WorkerId": "I001"
+      }
+    ]
+  },
+  {
+    "Id": "P001",
+    "FullName": "Sigismondo Della Rotula",
+    "JobRole": "Operario",
+    "Office": "Assemblaggio Motore",
+    "Age": "40",
+    "Address": "Via dell\u0027Acino 341",
+    "City": "Milano",
+    "Province": "MI",
+    "CAP": "11111",
+    "Phone": 9809876,
+    "Activities": [
+      {
+        "Id": 6,
+        "Date": "2023-01-07",
+        "Type": "Pre Festivo",
+        "Hours": 6,
+        "WorkerId": "P001"
+      },
+      {
+        "Id": 7,
+        "Date": "2023-01-09",
+        "Type": "Ferie",
+        "Hours": 9,
+        "WorkerId": "P001"
+      },
+      {
+        "Id": 8,
+        "Date": "2023-01-10",
+        "Type": "Ufficio",
+        "Hours": 8,
+        "WorkerId": "P001"
+      },
+      {
+        "Id": 9,
+        "Date": "2023-01-11",
+        "Type": "Ufficio",
+        "Hours": 8,
+        "WorkerId": "P001"
+      },
+      {
+        "Id": 10,
+        "Date": "2023-01-12",
+        "Type": "Trasferta",
+        "Hours": 13,
+        "WorkerId": "P001"
+      },
+      {
+        "Id": 11,
+        "Date": "2023-01-13",
+        "Type": "Trasferta",
+        "Hours": 9,
+        "WorkerId": "P001"
+      }
+    ]
+  },
+  {
+    "Id": "F021",
+    "FullName": "Erminia Satoll\u00E0",
+    "JobRole": "Impiegato",
+    "Office": "Ufficio Controllo Qualit\u00E0",
+    "Age": "37",
+    "Address": "Piazza Plutone 12",
+    "City": "Milano",
+    "Province": "MI",
+    "CAP": "00001",
+    "Phone": 11223344,
+    "Activities": []
+  },
+  {
+    "Id": "F022",
+    "FullName": "Eloisia Significata",
+    "JobRole": "Operaio",
+    "Office": "Addetta Servizio Mensa",
+    "Age": "51",
+    "Address": "Piazza Salamandra 29",
+    "City": "Milano",
+    "Province": "MI",
+    "CAP": "00002",
+    "Phone": 4433,
+    "Activities": [
+      {
+        "Id": 12,
+        "Date": "2023-01-09",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022"
+      },
+      {
+        "Id": 13,
+        "Date": "2022-01-10",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022"
+      },
+      {
+        "Id": 14,
+        "Date": "2022-01-11",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022"
+      },
+      {
+        "Id": 15,
+        "Date": "2022-01-12",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022"
+      },
+      {
+        "Id": 16,
+        "Date": "2022-01-13",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022"
+      }
+    ]
+  },
+  {
+    "Id": "R002",
+    "FullName": "Geppo Il Folle",
+    "JobRole": "Operaio",
+    "Office": "Addetto Servizio Mensa",
+    "Age": "45",
+    "Address": "Cala delle Sirene 44",
+    "City": "Messina",
+    "Province": "ME",
+    "CAP": "03000",
+    "Phone": 12039124,
+    "Activities": []
+  },
+  {
+    "Id": "R025",
+    "FullName": "Porfirio Cecato",
+    "JobRole": "Impiegato",
+    "Office": "Contabilita",
+    "Age": "38",
+    "Address": "Viale Guerrieri della Galassia 8",
+    "City": "Bergamo",
+    "Province": "BG",
+    "CAP": "20002",
+    "Phone": 39335,
+    "Activities": []
+  },
+  {
+    "Id": "M154",
+    "FullName": "Jenny Sapone",
+    "JobRole": "Impiegato",
+    "Office": "Contabilita",
+    "Age": "47",
+    "Address": "Piazzetta dei Puffi 721",
+    "City": "Venezia",
+    "Province": "VE",
+    "CAP": "00003",
+    "Phone": 998810,
+    "Activities": []
+  },
+  {
+    "Id": "T098",
+    "FullName": "Vespasiano Titillo",
+    "JobRole": "Operaio",
+    "Office": "Manutenzione",
+    "Age": "42",
+    "Address": "Viottolo delle CImici Profumate 1000",
+    "City": "Roma",
+    "Province": "Roma",
+    "CAP": "00000",
+    "Phone": 3303942,
+    "Activities": []
+  },
+  {
+    "Id": "S027",
+    "FullName": "Gianno Pocuciu",
+    "JobRole": "Operaio",
+    "Office": "Manutenzione",
+    "Age": "50",
+    "Address": "Via dei Licantropi Spaventati 8887",
+    "City": "Matera",
+    "Province": "MT",
+    "CAP": "01000",
+    "Phone": 28230,
+    "Activities": []
+  }
+]

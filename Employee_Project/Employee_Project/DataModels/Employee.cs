@@ -4,22 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Employee_Project.DataModels
 {   
     internal class Employee
     {
         [Key]
-        internal string? Id { get; set; }
+        [JsonInclude]
+        internal string? Id { get;}
+        [JsonInclude]
         internal string? FullName { get; set; }
+        [JsonInclude]
         internal string? JobRole { get; set; }
+        [JsonInclude]
         internal string? Office { get; set; }
+        [JsonInclude]
         internal string? Age { get; set; }
+        [JsonInclude]
         internal string? Address { get; set; }
+        [JsonInclude]
         internal string? City { get; set; }
+        [JsonInclude]
         internal string? Province { get; set; }
+        [JsonInclude]
         internal string? CAP {  get; set; }
+        [JsonInclude]
         internal int? Phone { get; set; }
+        [JsonInclude]
         internal List<Activity> Activities { get; set; } = [];
 
         internal Employee()

@@ -25,9 +25,10 @@ namespace Employee_Project
             { 
                 Console.Clear();
                 Console.WriteLine("GESTIONE EMPLOYEES\n\n");
-                Console.WriteLine("A) Import da file degli employees e delle activities");
+                Console.WriteLine("A) Import da file txt degli employees e delle activities");
                 Console.WriteLine("B) Mostra gli employees con activities eseguite");
                 Console.WriteLine("C) Mostra le activities");
+                Console.WriteLine("D) Export su file json degli employees e delle activities");
                 Console.WriteLine("F) Esci\n\n");
 
                 menuChoice = Console.ReadKey();
@@ -74,6 +75,15 @@ namespace Employee_Project
 
                         Console.Clear();
                         activityHelper.ShowActivities(activityList);
+                        Console.ReadLine();
+                        break;
+
+                    case Enums.Menu.DatasExportToJson:
+                        Console.Clear();
+                        if (employeeHelper.ExportEmployeesList(employees))
+                            Console.WriteLine("Dati esportati con successo.");
+                        else
+                            Console.WriteLine("Dati non esportati per via di un errore.");
                         Console.ReadLine();
                         break;
                 }

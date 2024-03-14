@@ -38,18 +38,18 @@ namespace Employee_Project.BLogic
                         activity.WorkerId = tempArray[3];*/
 
 
-                        if (employees.Count() > 0) { 
-                            Employee employee = employees.Find(e => e.Id == activity.WorkerId);
-                            if(employee != null)
-                            {
-                                employee.Activities.Add(activity);
-                            }
+                    if (employees.Count() > 0) { 
+                        Employee employee = employees.Find(e => e.Id == activity.WorkerId);
+                        if(employee != null)
+                        {
+                            employee.Activities.Add(activity);
                         }
-
-                        importedActivities.Add(activity);
-                        counter++;
                     }
-                );
+
+                    importedActivities.Add(activity);
+                    counter++;
+                });
+
             }catch (Exception e)
             {
                 Console.WriteLine(e);

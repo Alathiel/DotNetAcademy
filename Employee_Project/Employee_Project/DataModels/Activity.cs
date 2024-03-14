@@ -2,16 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Employee_Project.DataModels
 {
     internal class Activity
     {
-        internal int Id { get; set; }
+        [JsonInclude] //altrimenti non verra' aggiunto al json
+        internal int Id { get;}
+        [JsonInclude]
         internal DateOnly? Date { get; set; }
-        internal string? Type { get; set; } 
+        [JsonInclude]
+        internal string? Type { get; set; }
+        [JsonInclude]
         internal int? Hours { get; set; }
+        [JsonInclude]
         internal string? WorkerId { get; set; }
         
         internal Activity()

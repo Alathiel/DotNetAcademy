@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 
 namespace Employee_Project.BLogic
@@ -54,6 +56,19 @@ namespace Employee_Project.BLogic
                         Console.WriteLine("\nNon risultano attivita' per il lavoratore.");
                 }
             );
+        }
+
+        internal bool ExportEmployeesList(List<Employee> employees)
+        {
+            try {
+                string tempEmployees = JsonSerializer.Serialize(employees, new JsonSerializerOptions { WriteIndented = true}); //tutti gli attributi degli oggetti che verranno stampati devono essere public altrimenti usare [JsonInclude]
+                File.WriteAllText("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\JsonEmployees.json", tempEmployees); 
+                return true;
+            }catch (Exception ex) 
+            { 
+                Console.WriteLine(ex.ToString()); 
+            }
+            return false;
         }
 
         #endregion
