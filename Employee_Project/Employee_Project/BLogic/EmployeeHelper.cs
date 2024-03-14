@@ -42,7 +42,7 @@ namespace Employee_Project.BLogic
             employees.ForEach(e =>
                 {
                     Console.WriteLine($"\n\nId: {e.Id}\nFull name: {e.FullName}\nJob role: {e.JobRole}\nOffice: {e.Office}\nAge: {e.Age}\nAddress: {e.Address}\nCity: {e.City}\nProvince: {e.Province}\nCAP: {e.CAP}\nPhone {e.Phone}");
-                    if (e.Activities.Count >0)
+                    if (e.Activities.Count > 0)
                     {
                         Console.WriteLine("\nAttivita' del lavoratore:");
                         e.Activities.ForEach(a =>
@@ -50,6 +50,8 @@ namespace Employee_Project.BLogic
                             Console.WriteLine($"\nData: {a.Date}\nType: {a.Type}\nHours: {a.Hours}\nWorker Id: {a.WorkerId}");
                         });
                     }
+                    else
+                        Console.WriteLine("\nNon risultano attivita' per il lavoratore.");
                 }
             );
         }

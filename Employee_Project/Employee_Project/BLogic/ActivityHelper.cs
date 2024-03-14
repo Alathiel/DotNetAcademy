@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Employee_Project.BLogic
 {
@@ -17,9 +18,18 @@ namespace Employee_Project.BLogic
             {
                 int counter = 0;
                 activities.ForEach(e =>
-                    {
-                        string[] tempArray = e.Split(';');
-                        Activity activity = new Activity(counter, DateOnly.ParseExact(tempArray[0], "dd/mm/yyyy"), tempArray[1], Convert.ToInt32(tempArray[2]), tempArray[3]);
+                {
+                    string[] tempArray = e.Split(';');
+                    Activity activity = new Activity();
+                    DateOnly date;
+
+                    activity = new Activity(
+                        counter, 
+                        DateOnly.TryParseExact(tempArray[0], "dd/mm/yyyy", out date) ? date : DateOnly.FromDateTime(DateTime.Now),
+                        tempArray[1],
+                        Convert.ToInt32(tempArray[2]), tempArray[3]);
+                    
+                        
 
                         /*activity.Id = counter;
                         activity.Date = DateOnly.ParseExact(tempArray[0], "dd/mm/yyyy");
@@ -50,11 +60,16 @@ namespace Employee_Project.BLogic
         internal void ShowActivities(List<Activity> activities)
         {
             Console.WriteLine("Attivita' presenti nella lista");
-            activities.ForEach(a =>
-                {
-                    Console.WriteLine($"\n\nData: {a.Date}\nType: {a.Type}\nHours: {a.Hours}\nWorker Id: {a.WorkerId}");
-                }
-            );
+            if (activities.Count() > 0)
+            { 
+                activities.ForEach(a =>
+                    {
+                        Console.WriteLine($"\n\nData: {a.Date}\nType: {a.Type}\nHours: {a.Hours}\nWorker Id: {a.WorkerId}");
+                    }
+                );
+            }
+            else
+                Console.WriteLine("Non risultano attivita'.");
         }
 
         #endregion
