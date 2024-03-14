@@ -10,10 +10,9 @@ namespace Employee_Project.DataModels
 {   
     internal class Employee
     {
-        [Key]
-        [JsonInclude]
+        [Key] [Required] [JsonInclude]
         internal string? Id { get;}
-        [JsonInclude]
+        [JsonInclude] [MaxLength(30)] //[RegularExpression("^[a-zA-Z.]{2,} [a-zA-Z]{2,}$")] regex to check full name
         internal string? FullName { get; set; }
         [JsonInclude]
         internal string? JobRole { get; set; }

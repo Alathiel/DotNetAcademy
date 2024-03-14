@@ -58,21 +58,6 @@ namespace Employee_Project.BLogic
             );
         }
 
-        internal bool ExportEmployeesList(List<Employee> employees)
-        {
-            try {
-                string tempEmployees = JsonSerializer.Serialize(employees, new JsonSerializerOptions { WriteIndented = true}); //tutti gli attributi degli oggetti che verranno stampati devono essere public altrimenti usare [JsonInclude]
-                File.WriteAllText("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\JsonEmployees.json", tempEmployees); 
-                return true;
-            }catch (Exception ex) 
-            { 
-                Console.WriteLine(ex.ToString()); 
-            }
-            return false;
-        }
-
         #endregion
-
-
     }
 }

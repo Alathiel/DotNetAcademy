@@ -14,6 +14,7 @@ namespace Employee_Project.DataModels
             ShowEmployees = 'B',
             ShowActivities = 'C',
             DatasExportToJson = 'D',
+            DatasImportFromJson = 'E',
         }
     }
 }
