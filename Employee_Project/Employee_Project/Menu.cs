@@ -25,56 +25,28 @@ namespace Employee_Project
             { 
                 Console.Clear();
                 Console.WriteLine("GESTIONE EMPLOYEES\n\n");
-                Console.WriteLine("A) Import da file degli employees");
-                Console.WriteLine("B) Import da file delle activities");
-                Console.WriteLine("C) Mostra gli employees con activities eseguite");
-                Console.WriteLine("D) Mostra le activities");
+                Console.WriteLine("A) Import da file degli employees e delle activities");
+                Console.WriteLine("B) Mostra gli employees con activities eseguite");
+                Console.WriteLine("C) Mostra le activities");
                 Console.WriteLine("F) Esci\n\n");
 
                 menuChoice = Console.ReadKey();
 
                 switch ((Enums.Menu)menuChoice.Key)
                 {
-                    case Enums.Menu.EmployeesImport:
+                    case Enums.Menu.DatasImport:
                         try
                         {
                             //Console.WriteLine("Inserisci il percorso del file");
                             //string? path = Console.ReadLine();
-                        
                         
                             if (File.Exists(temp_path))
                             {
                                 List<string> tempEmployees = File.ReadAllLines("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employees.txt").ToList();
-                                employees = employeeHelper.ImportEmployees(tempEmployees);
-                                if(employees.Count > 0)
-                                {
-                                    Console.Clear();
-                                    Console.WriteLine("Import avvenuto con successo.");
-                                    Console.ReadLine();
-                                }
-                            }
-                            else
-                                Console.WriteLine($"Il percorso inserito non contiene un file.");
-
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine(e);
-                        }
-                        break;
-
-                    case Enums.Menu.ActivitiesImport:
-
-                        try
-                        {
-                            //Console.WriteLine("Inserisci il percorso del file");
-                            //string? path = Console.ReadLine();
-
-                            if (File.Exists(temp_path))
-                            {
                                 List<string> tempActivities = File.ReadAllLines("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\EmployeesActivities.txt").ToList();
+                                employees = employeeHelper.ImportEmployees(tempEmployees);
                                 activityList = activityHelper.ImportActivities(tempActivities, employees);
-                                if (activityList.Count > 0)
+                                if (employees.Count > 0)
                                 {
                                     Console.Clear();
                                     Console.WriteLine("Import avvenuto con successo.");
@@ -89,7 +61,6 @@ namespace Employee_Project
                         {
                             Console.WriteLine(e);
                         }
-
                         break;
                 
                     case Enums.Menu.ShowEmployees:

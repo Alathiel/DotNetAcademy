@@ -16,9 +16,9 @@ namespace Employee_Project.BLogic
             employeeFile.ForEach(e => 
                 { 
                     string [] tempArray = e.Split(';');
-                    Employee employee = new Employee();
+                    Employee employee = new Employee(tempArray[0], tempArray[1], tempArray[2], tempArray[3], tempArray[4], tempArray[5], tempArray[6], tempArray[7], tempArray[8], Convert.ToInt32(tempArray[9]));
 
-                    employee.Id = tempArray[0];
+                    /*employee.Id = tempArray[0];
                     employee.FullName = tempArray[1];
                     employee.JobRole = tempArray[2];
                     employee.Office = tempArray[3];
@@ -27,7 +27,7 @@ namespace Employee_Project.BLogic
                     employee.City = tempArray[6];
                     employee.Province = tempArray[7];
                     employee.CAP = tempArray[8];
-                    employee.Phone = Convert.ToInt32(tempArray[9]);
+                    employee.Phone = Convert.ToInt32(tempArray[9]);*/
 
                     importedEmployees.Add(employee);
                 }

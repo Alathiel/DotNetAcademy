@@ -10,10 +10,9 @@ namespace Employee_Project.DataModels
     {
         internal enum Menu
         {
-            EmployeesImport = 'A',
-            ActivitiesImport = 'B',
-            ShowEmployees = 'C',
-            ShowActivities = 'D'
+            DatasImport = 'A',
+            ShowEmployees = 'B',
+            ShowActivities = 'C'
         }
     }
 }

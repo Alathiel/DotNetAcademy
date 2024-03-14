@@ -19,13 +19,14 @@ namespace Employee_Project.BLogic
                 activities.ForEach(e =>
                     {
                         string[] tempArray = e.Split(';');
-                        Activity activity = new Activity();
+                        Activity activity = new Activity(counter, DateOnly.ParseExact(tempArray[0], "dd/mm/yyyy"), tempArray[1], Convert.ToInt32(tempArray[2]), tempArray[3]);
 
-                        activity.Id = counter;
+                        /*activity.Id = counter;
                         activity.Date = DateOnly.ParseExact(tempArray[0], "dd/mm/yyyy");
                         activity.Type = tempArray[1];
                         activity.Hours = Convert.ToInt32(tempArray[2]);
-                        activity.WorkerId = tempArray[3];
+                        activity.WorkerId = tempArray[3];*/
+
 
                         if (employees.Count() > 0) { 
                             Employee employee = employees.Find(e => e.Id == activity.WorkerId);

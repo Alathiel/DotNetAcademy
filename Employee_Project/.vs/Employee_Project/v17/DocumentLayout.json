@@ -5,6 +5,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\datamodels\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\datamodels\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\blogic\\activityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\blogic\\activityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\datamodels\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\datamodels\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\datamodels\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\datamodels\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\blogic\\employeehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\blogic\\employeehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Enums.cs",
+              "RelativeDocumentMoniker": "Employee_Project\\DataModels\\Enums.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Enums.cs",
+              "RelativeToolTip": "Employee_Project\\DataModels\\Enums.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T13:08:26.948Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +57,61 @@
               "RelativeDocumentMoniker": "Employee_Project\\Menu.cs",
               "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Menu.cs",
               "RelativeToolTip": "Employee_Project\\Menu.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAgwGYAAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswCQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T08:15:51.632Z",
+              "WhenOpened": "2024-03-14T13:05:29.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeHelper.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\EmployeeHelper.cs",
+              "RelativeDocumentMoniker": "Employee_Project\\BLogic\\EmployeeHelper.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\EmployeeHelper.cs",
+              "RelativeToolTip": "Employee_Project\\BLogic\\EmployeeHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T10:04:52.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Activity.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Activity.cs",
+              "RelativeDocumentMoniker": "Employee_Project\\DataModels\\Activity.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Activity.cs",
+              "RelativeToolTip": "Employee_Project\\DataModels\\Activity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T10:09:57.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee_Project\\DataModels\\Employee.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Employee.cs",
+              "RelativeToolTip": "Employee_Project\\DataModels\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T10:05:42.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ActivityHelper.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\ActivityHelper.cs",
+              "RelativeDocumentMoniker": "Employee_Project\\BLogic\\ActivityHelper.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\ActivityHelper.cs",
+              "RelativeToolTip": "Employee_Project\\BLogic\\ActivityHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T09:09:24.555Z",
               "EditorCaption": ""
             }
           ]

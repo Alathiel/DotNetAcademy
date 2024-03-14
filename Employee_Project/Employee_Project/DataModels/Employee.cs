@@ -22,5 +22,33 @@ namespace Employee_Project.DataModels
         internal int? Phone { get; set; }
         internal List<Activity> Activities { get; set; } = [];
 
+        internal Employee()
+        {
+            Id = string.Empty;
+            FullName = string.Empty;
+            JobRole = string.Empty;
+            Office = string.Empty;
+            Age = string.Empty;
+            Address = string.Empty;
+            City = string.Empty;
+            Province = string.Empty;
+            CAP = string.Empty;
+            Phone = 0;
+        }
+
+        internal Employee(string Id, string FullName, string JobRole, string Office, string Age, string Address, string City, string Province, string CAP, int Phone) 
+        {
+            this.Id = Id;
+            this.FullName = FullName;
+            this.JobRole = JobRole;
+            this.Office = Office;
+            this.Age = Age;
+            this.Address = Address;
+            this.City = City;
+            this.Province = Province;
+            this.CAP = CAP;
+            this.Phone = Phone;
+        }  
+
     }
 }
