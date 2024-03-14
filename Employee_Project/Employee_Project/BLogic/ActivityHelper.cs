@@ -27,11 +27,14 @@ namespace Employee_Project.BLogic
                         activity.Hours = Convert.ToInt32(tempArray[2]);
                         activity.WorkerId = tempArray[3];
 
-                        Employee employee = employees.Find(e => e.Id == activity.WorkerId);
-                        if(employee != null)
-                        {
-                            employee.Activities.Add(activity);
+                        if (employees.Count() > 0) { 
+                            Employee employee = employees.Find(e => e.Id == activity.WorkerId);
+                            if(employee != null)
+                            {
+                                employee.Activities.Add(activity);
+                            }
                         }
+
                         importedActivities.Add(activity);
                         counter++;
                     }
