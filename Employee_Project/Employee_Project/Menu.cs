@@ -15,6 +15,8 @@ namespace Employee_Project
         static List<Employee> employees = [];
         static List<Activity> activityList = [];
         static ConsoleKeyInfo menuChoice;
+
+        #region Public methods
         internal static void ShowMainMenu()
         {
             string temp_path = "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employees.txt";
@@ -102,7 +104,9 @@ namespace Employee_Project
             }while (menuChoice.Key.ToString() != "Z");
         }
 
+        #endregion
 
+        #region Private methods
         private static void SearchMenu()
         {
             try { 
@@ -124,16 +128,16 @@ namespace Employee_Project
                             Utility.SearchEmployee(employees);
                             Console.ReadLine();
                             break;
-                        case Enums.SearchMenu.RgrpFirst:
+                        case Enums.SearchMenu.GrpByCity:
                             Utility.GrpByCity(employees);
                             Console.ReadLine();
                             break;
-                        case Enums.SearchMenu.RgrpSecond:
+                        case Enums.SearchMenu.GrpByRoleOffice:
                             Utility.GrpByRoleOffice(employees);
                             Console.ReadLine();
                             break;
-                        case Enums.SearchMenu.RgrpThird:
-                            Utility.GrpByNameActivity(employees);
+                        case Enums.SearchMenu.GrpByNameActivity:
+                            Utility.GrpByNameActivity(employees, activityList);
                             Console.ReadLine();
                             break;
                     }
@@ -146,5 +150,7 @@ namespace Employee_Project
             }
 
         }
+
+        #region Public methods
     }
 }

@@ -103,25 +103,29 @@ namespace Employee_Project.DataModels
         internal static void GrpByNameActivity(List<Employee> employees, List<Activity> activities)
         {
             Console.Clear();
-            var grpdEmps = employees.GroupBy(e => (e.FullName, e.Activities));
-            foreach (var employee in grpdEmps)
+            //foreach (var employee in employees.GroupBy(e => (e.FullName, (e.Activities.DistinctBy(act => act.Type)))))
+            //foreach (var a in activities.DistinctBy(act => act.Type)){ 
+            //foreach (var employee in employees.GroupBy(e => (e.FullName, a)))
+            foreach (var employee in employees.GroupBy(e => (e.FullName, e.Activities)))
             {
-                Console.WriteLine(new string('*', 50));
+                /*Console.WriteLine("\n\n"+new string('*', 50));
                 Console.WriteLine(employee.Key);
-                Console.WriteLine(new string('*', 50));
+                Console.WriteLine(new string('*', 50));*/
                 foreach (var e in employee) 
-                { 
-                    Console.WriteLine($"\nNome: {e.FullName}\n");
+                {
+                    Console.WriteLine("\n\n" + new string('*', 50));
+                    Console.WriteLine($"Nome: {e.FullName}");
+                    Console.WriteLine(new string('*', 50));
                     if (e.Activities.Count > 0) 
                     {
-                        Console.WriteLine("Attivita' svolte: ");
-                        foreach (var activity in e.Activities)
+                        Console.WriteLine("\nTipi di attivita' svolte: ");
+                        foreach (var activity in e.Activities.DistinctBy(act => act.Type))
                         {
-                            Console.WriteLine($"Tipo: {activity.Type}\nData: {activity.Date}\nOre lavorate: {activity.Hours}");
+                            Console.WriteLine(activity.Type);
                         }
                     }
                     else 
-                        Console.WriteLine("Non sono presenti attivita' svolte.\n\n");
+                        Console.WriteLine("\nNon sono presenti attivita' svolte.\n\n");
                 }
             }
         }

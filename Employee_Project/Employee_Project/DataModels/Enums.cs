@@ -21,9 +21,9 @@ namespace Employee_Project.DataModels
         internal enum SearchMenu
         {
             SearchEmployee = 'A',
-            RgrpFirst = 'B',
-            RgrpSecond = 'C',
-            RgrpThird = 'D',
+            GrpByCity = 'B',
+            GrpByRoleOffice = 'C',
+            GrpByNameActivity = 'D',
         }
     }
 }
