@@ -10,17 +10,15 @@ namespace Employee_Project
 {
     internal class Menu
     {
+        static EmployeeHelper employeeHelper = new EmployeeHelper();
+        static ActivityHelper activityHelper = new ActivityHelper();
+        static List<Employee> employees = [];
+        static List<Activity> activityList = [];
+        static ConsoleKeyInfo menuChoice;
         internal static void ShowMainMenu()
         {
-
-
-            EmployeeHelper employeeHelper = new EmployeeHelper();
-            ActivityHelper activityHelper = new ActivityHelper();
-            List<Employee> employees = [];
-            List<Activity> activityList = [];
             string temp_path = "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employees.txt";
-            ConsoleKeyInfo menuChoice;
-
+            
             do
             { 
                 Console.Clear();
@@ -30,6 +28,7 @@ namespace Employee_Project
                 Console.WriteLine("C) Mostra le activities");
                 Console.WriteLine("D) Export su file json degli employees e delle activities");
                 Console.WriteLine("E) Import da file json degli employees e delle activities");
+                Console.WriteLine("F) Statistics");
                 Console.WriteLine("Z) Esci\n\n");
 
                 menuChoice = Console.ReadKey();
@@ -94,9 +93,58 @@ namespace Employee_Project
                         employeeHelper.ShowEmployeeList(employees);
                         Console.ReadLine();
                         break;
+                    
+                    case Enums.Menu.Statistics:
+                        Menu.SearchMenu();
+                        break;
                 }
 
-            }while (menuChoice.Key.ToString() != "F");
+            }while (menuChoice.Key.ToString() != "Z");
+        }
+
+
+        private static void SearchMenu()
+        {
+            try { 
+                do
+                {
+                    Console.Clear();
+                    Console.WriteLine("MENU STATISTICHE\n\n");
+                    Console.WriteLine("A) Ricerca impiegato per ruolo e citta'");
+                    Console.WriteLine("B) Raggruppamento per citta',  con i dati nome, ruolo, eta', in ordine di nome");
+                    Console.WriteLine("C) Raggruppamento per ruolo, ufficio, degli impiegati che hanno eta' maggiore di 45 anni");
+                    Console.WriteLine("D) Raggruppamento per nome, attivita', in modo da sapere che attivita' sono state svolte");
+                    Console.WriteLine("E) Ritorna al menu principale\n");
+
+                    menuChoice = Console.ReadKey();
+
+                    switch ((Enums.SearchMenu)menuChoice.Key)
+                    {
+                        case Enums.SearchMenu.SearchEmployee:
+                            Utility.SearchEmployee(employees);
+                            Console.ReadLine();
+                            break;
+                        case Enums.SearchMenu.RgrpFirst:
+                            Utility.GrpByCity(employees);
+                            Console.ReadLine();
+                            break;
+                        case Enums.SearchMenu.RgrpSecond:
+                            Utility.GrpByRoleOffice(employees);
+                            Console.ReadLine();
+                            break;
+                        case Enums.SearchMenu.RgrpThird:
+                            Utility.GrpByNameActivity(employees);
+                            Console.ReadLine();
+                            break;
+                    }
+
+                } while (menuChoice.Key.ToString() != "E");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+
         }
     }
 }

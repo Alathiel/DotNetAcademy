@@ -19,7 +19,7 @@ namespace Employee_Project.DataModels
         [JsonInclude]
         internal string? Office { get; set; }
         [JsonInclude]
-        internal string? Age { get; set; }
+        internal int? Age { get; set; }
         [JsonInclude]
         internal string? Address { get; set; }
         [JsonInclude]
@@ -39,7 +39,7 @@ namespace Employee_Project.DataModels
             FullName = string.Empty;
             JobRole = string.Empty;
             Office = string.Empty;
-            Age = string.Empty;
+            Age = 0;
             Address = string.Empty;
             City = string.Empty;
             Province = string.Empty;
@@ -47,7 +47,7 @@ namespace Employee_Project.DataModels
             Phone = 0;
         }
 
-        internal Employee(string Id, string FullName, string JobRole, string Office, string Age, string Address, string City, string Province, string CAP, int Phone) 
+        internal Employee(string Id, string FullName, string JobRole, string Office, int Age, string Address, string City, string Province, string CAP, int Phone) 
         {
             this.Id = Id;
             this.FullName = FullName;

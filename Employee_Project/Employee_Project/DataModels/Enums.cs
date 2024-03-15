@@ -15,6 +15,15 @@ namespace Employee_Project.DataModels
             ShowActivities = 'C',
             DatasExportToJson = 'D',
             DatasImportFromJson = 'E',
+            Statistics = 'F',
+        }
+
+        internal enum SearchMenu
+        {
+            SearchEmployee = 'A',
+            RgrpFirst = 'B',
+            RgrpSecond = 'C',
+            RgrpThird = 'D',
         }
     }
 }
