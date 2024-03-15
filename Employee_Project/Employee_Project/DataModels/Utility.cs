@@ -29,6 +29,7 @@ namespace Employee_Project.DataModels
             }
             return false;
         }
+        
         internal static List<Employee> ImportEmployeesList() //not working
         {
             try
@@ -43,22 +44,6 @@ namespace Employee_Project.DataModels
             }
 
             return [];
-        }
-
-        internal static void DatasValidator (Employee toValidate)
-        {
-
-            var context = new ValidationContext(toValidate, serviceProvider: null, items: null);
-            var validationResults = new List<ValidationResult>();
-            bool isValid = Validator.TryValidateObject(toValidate, context, validationResults, validateAllProperties: true);
-        }
-
-        internal static void DatasValidator(Activity toValidate)
-        {
-
-            var context = new ValidationContext(toValidate, serviceProvider: null, items: null);
-            var validationResults = new List<ValidationResult>();
-            bool isValid = Validator.TryValidateObject(toValidate, context, validationResults, validateAllProperties: true);
         }
 
         internal static void SearchEmployee(List<Employee> employees)

@@ -30,8 +30,16 @@ namespace Employee_Project.BLogic
                     employee.Province = tempArray[7];
                     employee.CAP = tempArray[8];
                     employee.Phone = Convert.ToInt32(tempArray[9]);*/
-
-                    importedEmployees.Add(employee);
+                    if (employee.isValid())
+                        importedEmployees.Add(employee);
+                    else 
+                    {
+                        Console.WriteLine("Oggetto non aggiunto per via dei seguenti errori: ");
+                        employee.errors.ForEach(e =>
+                        {
+                            Console.WriteLine(e);
+                        });
+                    }
                 }
             );
 

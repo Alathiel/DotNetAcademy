@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -19,7 +20,9 @@ namespace Employee_Project.DataModels
         internal int? Hours { get; set; }
         [JsonInclude]
         internal string? WorkerId { get; set; }
-        
+
+        public List<ValidationResult> errors { get; set; } = [];
+
         internal Activity()
         {
             Id = 0;
@@ -36,6 +39,11 @@ namespace Employee_Project.DataModels
             this.Type = Type;
             this.Hours = Hours;
             this.WorkerId = WorkerId;
+        }
+
+        internal bool isValid()
+        {
+            return Validator.TryValidateObject(this, new ValidationContext(this), errors, true);
         }
 
     }

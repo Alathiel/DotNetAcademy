@@ -28,22 +28,26 @@ namespace Employee_Project.BLogic
                         DateOnly.TryParseExact(tempArray[0], "dd/mm/yyyy", out date) ? date : DateOnly.FromDateTime(DateTime.Now),
                         tempArray[1],
                         Convert.ToInt32(tempArray[2]), tempArray[3]);
-                    
-                        
-
-                        /*activity.Id = counter;
-                        activity.Date = DateOnly.ParseExact(tempArray[0], "dd/mm/yyyy");
-                        activity.Type = tempArray[1];
-                        activity.Hours = Convert.ToInt32(tempArray[2]);
-                        activity.WorkerId = tempArray[3];*/
 
 
-                    if (employees.Count() > 0) { 
+                    if (employees.Count() > 0 && activity.isValid()) { 
                         Employee employee = employees.Find(e => e.Id == activity.WorkerId);
                         if(employee != null)
                         {
                             employee.Activities.Add(activity);
                         }
+                    }
+                    else
+                    {
+                        if (activity.errors.Count > 0) { 
+                            Console.WriteLine("Oggetto non aggiunto per via dei seguenti errori: ");
+                            activity.errors.ForEach(e =>
+                            {
+                                Console.WriteLine(e);
+                            });
+                        }
+                        else
+                            Console.WriteLine("Non sono presenti employees nella lista.");
                     }
 
                     importedActivities.Add(activity);

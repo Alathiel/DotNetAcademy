@@ -33,6 +33,8 @@ namespace Employee_Project.DataModels
         [JsonInclude]
         internal List<Activity> Activities { get; set; } = [];
 
+        public List<ValidationResult> errors { get; set; } = [];
+
         internal Employee()
         {
             Id = string.Empty;
@@ -60,6 +62,11 @@ namespace Employee_Project.DataModels
             this.CAP = CAP;
             this.Phone = Phone;
         }  
+
+        internal bool isValid()
+        {
+            return Validator.TryValidateObject(this, new ValidationContext(this), errors, true);
+        }
 
     }
 }
