@@ -46,7 +46,7 @@ namespace Employee_Project.DataModels
             CAP = string.Empty;
             Phone = 0;
         }
-
+        [JsonConstructor]
         internal Employee(string Id, string FullName, string JobRole, string Office, int Age, string Address, string City, string Province, string CAP, int Phone) 
         {
             this.Id = Id;

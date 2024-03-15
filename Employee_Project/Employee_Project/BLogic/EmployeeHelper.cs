@@ -24,7 +24,7 @@ namespace Employee_Project.BLogic
                     employee.FullName = tempArray[1];
                     employee.JobRole = tempArray[2];
                     employee.Office = tempArray[3];
-                    employee.Age = tempArray[4];
+                    employee.Age = Convert.ToInt16tempArray[4]);
                     employee.Address = tempArray[5];
                     employee.City = tempArray[6];
                     employee.Province = tempArray[7];

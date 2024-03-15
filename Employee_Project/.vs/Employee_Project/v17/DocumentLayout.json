@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\datamodels\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\blogic\\employeehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\blogic\\employeehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\datamodels\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\datamodels\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\employeesactivities.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\employeesactivities.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\blogic\\activityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\blogic\\activityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\datamodels\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\datamodels\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Menu.cs",
               "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Menu.cs",
               "RelativeDocumentMoniker": "Employee_Project\\Menu.cs",
               "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Menu.cs",
               "RelativeToolTip": "Employee_Project\\Menu.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwHgAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAewIAAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T13:05:29.228Z",
               "IsPinned": true,
@@ -52,54 +40,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeesActivities.txt",
-              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\EmployeesActivities.txt",
-              "RelativeDocumentMoniker": "Employee_Project\\EmployeesActivities.txt",
-              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\EmployeesActivities.txt",
-              "RelativeToolTip": "Employee_Project\\EmployeesActivities.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-03-15T14:26:17.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Activity.cs",
-              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Activity.cs",
-              "RelativeDocumentMoniker": "Employee_Project\\DataModels\\Activity.cs",
-              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Activity.cs",
-              "RelativeToolTip": "Employee_Project\\DataModels\\Activity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:57:41.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmployeeHelper.cs",
-              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\EmployeeHelper.cs",
-              "RelativeDocumentMoniker": "Employee_Project\\BLogic\\EmployeeHelper.cs",
-              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\EmployeeHelper.cs",
-              "RelativeToolTip": "Employee_Project\\BLogic\\EmployeeHelper.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBgAAAA0AAAA",
+              "Title": "Employee.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Employee.cs",
+              "RelativeDocumentMoniker": "Employee_Project\\DataModels\\Employee.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Employee.cs",
+              "RelativeToolTip": "Employee_Project\\DataModels\\Employee.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAmwCwAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:49:27.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ActivityHelper.cs",
-              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\ActivityHelper.cs",
-              "RelativeDocumentMoniker": "Employee_Project\\BLogic\\ActivityHelper.cs",
-              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\ActivityHelper.cs",
-              "RelativeToolTip": "Employee_Project\\BLogic\\ActivityHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:49:26.621Z",
+              "WhenOpened": "2024-03-15T15:05:04.81Z",
               "EditorCaption": ""
             },
             {
@@ -110,7 +59,7 @@
               "RelativeDocumentMoniker": "Employee_Project\\DataModels\\Utility.cs",
               "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\DataModels\\Utility.cs",
               "RelativeToolTip": "Employee_Project\\DataModels\\Utility.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAA5wH8AAAAtAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-15T11:34:19.576Z",
               "EditorCaption": ""

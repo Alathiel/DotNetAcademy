@@ -33,8 +33,9 @@ namespace Employee_Project.DataModels
         {
             try
             {
-                string tempEmployees = File.ReadAllText("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\JsonEmployees.json");
-                return JsonSerializer.Deserialize<List<Employee>>(tempEmployees);
+                JsonSerializerOptions options = new JsonSerializerOptions { IncludeFields = true };
+                string? tempEmployees = File.ReadAllText("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\JsonEmployees.json");
+                return JsonSerializer.Deserialize<List<Employee>>(tempEmployees, options);
             }
             catch (Exception ex)
             {
@@ -69,7 +70,7 @@ namespace Employee_Project.DataModels
             string? city = Console.ReadLine();
 
 
-            List<Employee> filteredEmps = employees.FindAll(e => e.JobRole == role && e.City == city);
+            List<Employee> filteredEmps = employees.FindAll(e => e.JobRole.ToLower() == role.ToLower() && e.City.ToLower() == city.ToLower());
             employeeHelper.ShowEmployeeList(filteredEmps);
         }
 
