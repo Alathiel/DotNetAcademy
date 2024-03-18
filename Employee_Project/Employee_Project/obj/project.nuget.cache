@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "88t/p5CP7N8qEKHr1E/BFLK6z6OpP86ag3b0BmRde7JOGW2Gl1xdpE3jky+IqcydU0lD6v3xfKSUjht/jb0tHA==",
+  "dgSpecHash": "Of6wv7XFwMyldtEJTE3UEk0OjmZvHtYG/SOHFxFoIYC2sn/wK4MtMG9Si0OhDCMtHjNpMX6OuhP5J1OldMU0oA==",
   "success": true,
   "projectFilePath": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fede\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\fede\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\fede\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\fede\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
     "C:\\Users\\fede\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\fede\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\fede\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
   ],
   "logs": []

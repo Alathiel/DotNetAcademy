@@ -10,7 +10,56 @@
     "Province": "Roma",
     "CAP": "00000",
     "Phone": 123456789,
-    "Activities": [],
+    "Activities": [
+      {
+        "Id": 0,
+        "Date": "2023-01-07",
+        "Type": "Pre Festivo",
+        "Hours": 4,
+        "WorkerId": "I001",
+        "errors": []
+      },
+      {
+        "Id": 1,
+        "Date": "2023-01-09",
+        "Type": "Ufficio",
+        "Hours": 10,
+        "WorkerId": "I001",
+        "errors": []
+      },
+      {
+        "Id": 2,
+        "Date": "2023-01-10",
+        "Type": "Ufficio",
+        "Hours": 8,
+        "WorkerId": "I001",
+        "errors": []
+      },
+      {
+        "Id": 3,
+        "Date": "2023-01-11",
+        "Type": "Ferie",
+        "Hours": 4,
+        "WorkerId": "I001",
+        "errors": []
+      },
+      {
+        "Id": 4,
+        "Date": "2023-01-12",
+        "Type": "Ufficio",
+        "Hours": 8,
+        "WorkerId": "I001",
+        "errors": []
+      },
+      {
+        "Id": 5,
+        "Date": "2023-01-13",
+        "Type": "Ufficio",
+        "Hours": 9,
+        "WorkerId": "I001",
+        "errors": []
+      }
+    ],
     "errors": []
   },
   {
@@ -24,7 +73,56 @@
     "Province": "MI",
     "CAP": "11111",
     "Phone": 9809876,
-    "Activities": [],
+    "Activities": [
+      {
+        "Id": 6,
+        "Date": "2023-01-07",
+        "Type": "Pre Festivo",
+        "Hours": 6,
+        "WorkerId": "P001",
+        "errors": []
+      },
+      {
+        "Id": 7,
+        "Date": "2023-01-09",
+        "Type": "Ferie",
+        "Hours": 9,
+        "WorkerId": "P001",
+        "errors": []
+      },
+      {
+        "Id": 8,
+        "Date": "2023-01-10",
+        "Type": "Ufficio",
+        "Hours": 8,
+        "WorkerId": "P001",
+        "errors": []
+      },
+      {
+        "Id": 9,
+        "Date": "2023-01-11",
+        "Type": "Ufficio",
+        "Hours": 8,
+        "WorkerId": "P001",
+        "errors": []
+      },
+      {
+        "Id": 10,
+        "Date": "2023-01-12",
+        "Type": "Trasferta",
+        "Hours": 13,
+        "WorkerId": "P001",
+        "errors": []
+      },
+      {
+        "Id": 11,
+        "Date": "2023-01-13",
+        "Type": "Trasferta",
+        "Hours": 9,
+        "WorkerId": "P001",
+        "errors": []
+      }
+    ],
     "errors": []
   },
   {
@@ -52,7 +150,48 @@
     "Province": "MI",
     "CAP": "00002",
     "Phone": 4433,
-    "Activities": [],
+    "Activities": [
+      {
+        "Id": 12,
+        "Date": "2023-01-09",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022",
+        "errors": []
+      },
+      {
+        "Id": 13,
+        "Date": "2022-01-10",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022",
+        "errors": []
+      },
+      {
+        "Id": 14,
+        "Date": "2022-01-11",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022",
+        "errors": []
+      },
+      {
+        "Id": 15,
+        "Date": "2022-01-12",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022",
+        "errors": []
+      },
+      {
+        "Id": 16,
+        "Date": "2022-01-13",
+        "Type": "Sede",
+        "Hours": 8,
+        "WorkerId": "F022",
+        "errors": []
+      }
+    ],
     "errors": []
   },
   {

@@ -7,36 +7,36 @@ using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace Employee_Project.DataModels
-{   
-    internal class Employee
+{
+    public class Employee
     {
         [Key] [Required] [JsonInclude]
-        internal string? Id { get;}
+        public string? Id { get;}
         [JsonInclude] [MaxLength(30)] //[RegularExpression("^[a-zA-Z.]{2,} [a-zA-Z]{2,}$")] regex to check full name
-        internal string? FullName { get; set; }
+        public string? FullName { get; set; }
         [JsonInclude]
-        internal string? JobRole { get; set; }
+        public string? JobRole { get; set; }
         [JsonInclude]
-        internal string? Office { get; set; }
+        public string? Office { get; set; }
         [JsonInclude]
         [Range(18, 120)]
-        internal int? Age { get; set; }
+        public int? Age { get; set; }
         [JsonInclude]
-        internal string? Address { get; set; }
+        public string? Address { get; set; }
         [JsonInclude]
-        internal string? City { get; set; }
+        public string? City { get; set; }
         [JsonInclude]
-        internal string? Province { get; set; }
+        public string? Province { get; set; }
         [JsonInclude]
-        internal string? CAP {  get; set; }
+        public string? CAP {  get; set; }
         [JsonInclude]
-        internal int? Phone { get; set; }
+        public int? Phone { get; set; }
         [JsonInclude]
-        internal List<Activity> Activities { get; set; } = [];
+        public List<Activity> Activities { get; set; } = [];
 
         public List<ValidationResult> errors { get; set; } = [];
-
-        internal Employee()
+        [JsonConstructor]
+        public Employee()
         {
             Id = string.Empty;
             FullName = string.Empty;
@@ -49,8 +49,8 @@ namespace Employee_Project.DataModels
             CAP = string.Empty;
             Phone = 0;
         }
-        [JsonConstructor]
-        internal Employee(string Id, string FullName, string JobRole, string Office, int Age, string Address, string City, string Province, string CAP, int Phone) 
+        
+        public Employee(string Id, string FullName, string JobRole, string Office, int Age, string Address, string City, string Province, string CAP, int Phone) 
         {
             this.Id = Id;
             this.FullName = FullName;

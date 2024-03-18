@@ -8,22 +8,23 @@ using System.Threading.Tasks;
 
 namespace Employee_Project.DataModels
 {
-    internal class Activity
+    public class Activity
     {
         [JsonInclude] //altrimenti non verra' aggiunto al json
-        internal int Id { get;}
+        public int Id { get;}
         [JsonInclude]
-        internal DateOnly? Date { get; set; }
+        public DateOnly? Date { get; set; }
         [JsonInclude]
-        internal string? Type { get; set; }
+        public string? Type { get; set; }
         [JsonInclude]
-        internal int? Hours { get; set; }
+        public int? Hours { get; set; }
         [JsonInclude]
-        internal string? WorkerId { get; set; }
+        public string? WorkerId { get; set; }
 
         public List<ValidationResult> errors { get; set; } = [];
 
-        internal Activity()
+        [JsonConstructor]
+        public Activity()
         {
             Id = 0;
             Date = new DateOnly();
@@ -31,8 +32,8 @@ namespace Employee_Project.DataModels
             Hours = 0;
             WorkerId = string.Empty;
         }
-
-        internal Activity(int Id, DateOnly Date, string Type, int Hours, string WorkerId)
+        
+        public Activity(int Id, DateOnly Date, string Type, int Hours, string WorkerId)
         {
             this.Id = Id;
             this.Date = Date;
@@ -41,7 +42,7 @@ namespace Employee_Project.DataModels
             this.WorkerId = WorkerId;
         }
 
-        internal bool isValid()
+        public bool isValid()
         {
             return Validator.TryValidateObject(this, new ValidationContext(this), errors, true);
         }

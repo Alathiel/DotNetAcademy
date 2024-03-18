@@ -11,8 +11,8 @@ namespace Employee_Project.BLogic
             List<Employee> importedEmployees = [];
             try
             {
-                List<string> tempEmployees = File.ReadAllLines(ConfigurationManager.AppSettings["ProjectPath"]+""+ConfigurationManager.AppSettings["EmployeesPath"]).ToList(); //prende il path dal file app.config
-                
+                //List<string> tempEmployees = File.ReadAllLines(ConfigurationManager.AppSettings["ProjectPath"]+""+ConfigurationManager.AppSettings["EmployeesPath"]).ToList(); //prende il path dal file app.config
+                List<string> tempEmployees = FileUtility.Utility.ImportTXTFile(ConfigurationManager.AppSettings["ProjectPath"]);
                 tempEmployees.ForEach(e => 
                 {
                     string [] tempArray = e.Split(';');
@@ -31,7 +31,7 @@ namespace Employee_Project.BLogic
                 });
             }
             catch (Exception ex) { Console.WriteLine(ex); }
-            
+
             return importedEmployees;
         }
 

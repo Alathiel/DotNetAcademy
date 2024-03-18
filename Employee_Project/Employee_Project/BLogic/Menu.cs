@@ -13,8 +13,6 @@ namespace Employee_Project.BLogic
         #region Public methods
         internal static void ShowMainMenu()
         {
-            string temp_path = "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employees.txt";
-
             do
             {
                 Console.Clear();
