@@ -19,6 +19,7 @@ namespace Employee_Project.DataModels
         [JsonInclude]
         internal string? Office { get; set; }
         [JsonInclude]
+        [Range(18, 120)]
         internal int? Age { get; set; }
         [JsonInclude]
         internal string? Address { get; set; }

@@ -13,3 +13,11 @@ F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\ref
 F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.pdb
 F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.genruntimeconfig.cache
 F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\ref\Employee_Project.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\Employee_Project.dll.config
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.csproj.AssemblyReference.cache
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+F:\Projects\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee.121179FF.Up2Date

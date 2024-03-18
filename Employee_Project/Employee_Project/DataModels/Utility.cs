@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -15,12 +16,15 @@ namespace Employee_Project.DataModels
         static EmployeeHelper employeeHelper = new EmployeeHelper();
 
         #region Public methods
-        internal static bool ExportEmployeesList(List<Employee> employees)
+        internal static bool ExportListToJSON(List<Employee> employees)
         {
             try
             {
+                Console.Clear();
+                Console.Write("Inserisci il nome che dovra' avere il file esportato: ");
+                string fileName = Console.ReadLine();
                 string tempEmployees = JsonSerializer.Serialize(employees, new JsonSerializerOptions { WriteIndented = true }); //tutti gli attributi degli oggetti che verranno stampati devono essere public altrimenti usare [JsonInclude]
-                File.WriteAllText("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\JsonEmployees.json", tempEmployees);
+                File.WriteAllText(ConfigurationManager.AppSettings["ProjectPath"] + @"\"+fileName+".json", tempEmployees);
                 return true;
             }
             catch (Exception ex)

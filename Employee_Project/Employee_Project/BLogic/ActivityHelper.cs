@@ -1,23 +1,19 @@
 ﻿using Employee_Project.DataModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Configuration;
 
 namespace Employee_Project.BLogic
 {
     internal class ActivityHelper
     {
         #region Public Methods
-        internal List<Activity> ImportActivities(List<string> activities, List<Employee> employees)
+        internal List<Activity> ImportActivities(List<Employee> employees)
         {
             List<Activity> importedActivities = [];
             try
             {
+                List<string> tempActivities = File.ReadAllLines(ConfigurationManager.AppSettings["ProjectPath"] + "" + ConfigurationManager.AppSettings["ActivitiesPath"]).ToList();//prendo il path dal app.config
                 int counter = 0;
-                activities.ForEach(e =>
+                tempActivities.ForEach(e =>
                 {
                     string[] tempArray = e.Split(';');
                     Activity activity = new Activity();
@@ -58,6 +54,7 @@ namespace Employee_Project.BLogic
             {
                 Console.WriteLine(e);
             }
+
             return importedActivities;
         }
 

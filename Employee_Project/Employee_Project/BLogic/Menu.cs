@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Employee_Project.BLogic;
-using Employee_Project.DataModels;
+﻿using Employee_Project.DataModels;
 
-namespace Employee_Project
+namespace Employee_Project.BLogic
 {
     internal class Menu
     {
@@ -20,9 +14,9 @@ namespace Employee_Project
         internal static void ShowMainMenu()
         {
             string temp_path = "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employees.txt";
-            
+
             do
-            { 
+            {
                 Console.Clear();
                 Console.WriteLine("GESTIONE EMPLOYEES\n\n");
                 Console.WriteLine("A) Import da file txt degli employees e delle activities");
@@ -38,34 +32,18 @@ namespace Employee_Project
                 switch ((Enums.Menu)menuChoice.Key)
                 {
                     case Enums.Menu.DatasImport:
-                        try
-                        {
-                            //Console.WriteLine("Inserisci il percorso del file");
-                            //string? path = Console.ReadLine();
-                        
-                            if (File.Exists(temp_path))
-                            {
-                                List<string> tempEmployees = File.ReadAllLines("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employees.txt").ToList();
-                                List<string> tempActivities = File.ReadAllLines("F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\EmployeesActivities.txt").ToList();
-                                employees = employeeHelper.ImportEmployees(tempEmployees);
-                                activityList = activityHelper.ImportActivities(tempActivities, employees);
-                                if (employees.Count > 0)
-                                {
-                                    Console.Clear();
-                                    Console.WriteLine("Import avvenuto con successo.");
-                                    Console.ReadLine();
-                                }
-                            }
-                            else
-                                Console.WriteLine($"Il percorso inserito non contiene un file.");
 
-                        }
-                        catch (Exception e)
+                        employees = employeeHelper.ImportEmployees();
+                        activityList = activityHelper.ImportActivities(employees);
+                        if (employees.Count > 0)
                         {
-                            Console.WriteLine(e);
+                            Console.Clear();
+                            Console.WriteLine("Import avvenuto con successo.");
+                            Console.ReadLine();
                         }
+
                         break;
-                
+
                     case Enums.Menu.ShowEmployees:
 
                         Console.Clear();
@@ -82,7 +60,7 @@ namespace Employee_Project
 
                     case Enums.Menu.DatasExportToJson:
                         Console.Clear();
-                        if (Utility.ExportEmployeesList(employees))
+                        if (Utility.ExportListToJSON(employees))
                             Console.WriteLine("Dati esportati con successo.");
                         else
                             Console.WriteLine("Dati non esportati per via di un errore.");
@@ -95,13 +73,13 @@ namespace Employee_Project
                         employeeHelper.ShowEmployeeList(employees);
                         Console.ReadLine();
                         break;
-                    
+
                     case Enums.Menu.Statistics:
-                        Menu.SearchMenu();
+                        SearchMenu();
                         break;
                 }
 
-            }while (menuChoice.Key.ToString() != "Z");
+            } while (menuChoice.Key.ToString() != "Z");
         }
 
         #endregion
@@ -109,7 +87,8 @@ namespace Employee_Project
         #region Private methods
         private static void SearchMenu()
         {
-            try { 
+            try
+            {
                 do
                 {
                     Console.Clear();

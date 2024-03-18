@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Uhe9+PwcNp4UVp803tqeV3SJaUC+CZPZ1kCnKnXEyjI4v6zaS+ix5YtbfFHPAXfefOpKLJm3v52sTnc1IQJemA==",
+  "dgSpecHash": "88t/p5CP7N8qEKHr1E/BFLK6z6OpP86ag3b0BmRde7JOGW2Gl1xdpE3jky+IqcydU0lD6v3xfKSUjht/jb0tHA==",
   "success": true,
   "projectFilePath": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\fede\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\fede\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\fede\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

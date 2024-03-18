@@ -1,48 +1,37 @@
 ﻿using Employee_Project.DataModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Text.Json.Nodes;
-using System.Threading.Tasks;
+using System.Configuration;
 
 namespace Employee_Project.BLogic
 {
     internal class EmployeeHelper
     {
         #region Public Methods 
-        internal List<Employee> ImportEmployees(List<string> employeeFile)
+        internal List<Employee> ImportEmployees()
         {
             List<Employee> importedEmployees = [];
-            employeeFile.ForEach(e => 
-                { 
+            try
+            {
+                List<string> tempEmployees = File.ReadAllLines(ConfigurationManager.AppSettings["ProjectPath"]+""+ConfigurationManager.AppSettings["EmployeesPath"]).ToList(); //prende il path dal file app.config
+                
+                tempEmployees.ForEach(e => 
+                {
                     string [] tempArray = e.Split(';');
                     Employee employee = new Employee(tempArray[0], tempArray[1], tempArray[2], tempArray[3], Convert.ToInt16(tempArray[4]), tempArray[5], tempArray[6], tempArray[7], tempArray[8], Convert.ToInt32(tempArray[9]));
-
-                    /*employee.Id = tempArray[0];
-                    employee.FullName = tempArray[1];
-                    employee.JobRole = tempArray[2];
-                    employee.Office = tempArray[3];
-                    employee.Age = Convert.ToInt16tempArray[4]);
-                    employee.Address = tempArray[5];
-                    employee.City = tempArray[6];
-                    employee.Province = tempArray[7];
-                    employee.CAP = tempArray[8];
-                    employee.Phone = Convert.ToInt32(tempArray[9]);*/
+  
                     if (employee.isValid())
-                        importedEmployees.Add(employee);
-                    else 
-                    {
-                        Console.WriteLine("Oggetto non aggiunto per via dei seguenti errori: ");
-                        employee.errors.ForEach(e =>
+                            importedEmployees.Add(employee);
+                        else 
                         {
-                            Console.WriteLine(e);
-                        });
-                    }
-                }
-            );
-
+                            Console.WriteLine("Oggetto non aggiunto per via dei seguenti errori: ");
+                            employee.errors.ForEach(e =>
+                            {
+                                Console.WriteLine(e);
+                            });
+                        }
+                });
+            }
+            catch (Exception ex) { Console.WriteLine(ex); }
+            
             return importedEmployees;
         }
 
