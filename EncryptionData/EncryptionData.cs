@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace EncryptionData
@@ -20,7 +21,50 @@ namespace EncryptionData
                 catch( Exception e) { Console.WriteLine(e); }
             }
             return string.Empty;
-
         }
+
+        
+        public static string Sha256Decrypt()
+        {
+            return string.Empty;
+        }
+        
+         public static KeyValuePair<string,string> SaltEncrypt(string pw)
+        {
+            byte[] byteSalt = new byte[16];
+            string encryptedResult = string.Empty;
+            string encryptedSalt = string.Empty;
+
+            try
+            {
+                RandomNumberGenerator.Fill(byteSalt); //fill array with random numbers
+                //encrypt password
+                encryptedResult = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                    password: pw, 
+                    salt: byteSalt, 
+                    prf: KeyDerivationPrf.HMACSHA256,
+                    iterationCount: 100000,
+                   numBytesRequested: 32
+                ));
+                //encrypt salt
+                encryptedSalt = Convert.ToBase64String(byteSalt);
+
+                byte[] decryptedSalt = Convert.FromBase64String(encryptedSalt);
+                string decryptedResult = string.Empty;
+
+                /*decryptedResult = Convert.ToBase64String(
+                    KeyDerivation.Pbkdf2(
+                        password:
+                        salt:
+                        prf:
+                        iterationCount:
+                        numBytesRequested:
+                        ));*/
+                return new KeyValuePair<string, string> (encryptedResult,encryptedSalt);
+            }
+            catch( Exception e ) { Console.WriteLine( e ); }
+            return new KeyValuePair<string, string>();
+        }
+        
     }
 }

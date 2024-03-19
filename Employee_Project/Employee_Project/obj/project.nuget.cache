@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TvO4oNpjgUDvGZwuLIC32TPylx0K7SHQz33nJ5LCnkk0NJ2w3hfbRevNOYTSF26ohstOkmCX3J89josX/Pw7KQ==",
+  "dgSpecHash": "ht8ReS7HwKbX1pN7FeuiTVuMGwclA60kyvqRqV+XOxexzzTiFBwCGFiZmsy+0VuMyaalhnZZGaFov6r1qTkGIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Betacom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.3\\microsoft.aspnetcore.cryptography.internal.8.0.3.nupkg.sha512",
+    "C:\\Users\\Betacom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.3\\microsoft.aspnetcore.cryptography.keyderivation.8.0.3.nupkg.sha512",
     "C:\\Users\\Betacom\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Betacom\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Betacom\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

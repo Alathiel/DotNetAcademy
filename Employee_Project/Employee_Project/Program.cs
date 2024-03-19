@@ -1,12 +1,14 @@
 ﻿using Employee_Project.BLogic;
 using System.Configuration;
+using EncryptionData;
 
 internal class Program{
     static void Main(string[] args)
     {
         string workingDirectory = Environment.CurrentDirectory;
         ConfigurationManager.AppSettings["ProjectPath"] = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
-        Console.WriteLine(EncryptionData.EncryptionData.Sha256Encrypt("aaaaa  aaaa"));
+        KeyValuePair<string, string> pw = EncryptionData.EncryptionData.SaltEncrypt("Claudio");
+        Console.WriteLine($"PasswordHash: {pw.Key} - Salt: {pw.Value}");
         Console.ReadLine();
         Menu.ShowMainMenu();
     }
