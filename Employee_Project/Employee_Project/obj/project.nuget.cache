@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "Of6wv7XFwMyldtEJTE3UEk0OjmZvHtYG/SOHFxFoIYC2sn/wK4MtMG9Si0OhDCMtHjNpMX6OuhP5J1OldMU0oA==",
+  "dgSpecHash": "kJMhhWGHyfMv+LjRfEEsLhQV6ws5Y+KMmgZc2d2wp65If+02SOqnOv4B7NsNm4UxQU0LKcSMDZTLQoY1K2PJaA==",
   "success": true,
-  "projectFilePath": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
+  "projectFilePath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\fede\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\fede\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\fede\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
-    "C:\\Users\\fede\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
-    "C:\\Users\\fede\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
-    "C:\\Users\\fede\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\fede\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+    "C:\\Users\\Betacom\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Betacom\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Betacom\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\Betacom\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\Betacom\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\Betacom\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\Betacom\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

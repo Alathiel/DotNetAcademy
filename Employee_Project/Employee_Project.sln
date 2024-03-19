@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee_Project", "Employee_Project\Employee_Project.csproj", "{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileUtility", "..\FileUtility\FileUtility.csproj", "{7AA20A07-435E-4B0D-A964-74EA2E67010F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7D0AA3A6-12B2-4F21-892D-727B1FA11BE9} = {7D0AA3A6-12B2-4F21-892D-727B1FA11BE9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogHandler", "..\LogHandler\LogHandler.csproj", "{7D0AA3A6-12B2-4F21-892D-727B1FA11BE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{7AA20A07-435E-4B0D-A964-74EA2E67010F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AA20A07-435E-4B0D-A964-74EA2E67010F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AA20A07-435E-4B0D-A964-74EA2E67010F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D0AA3A6-12B2-4F21-892D-727B1FA11BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0AA3A6-12B2-4F21-892D-727B1FA11BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0AA3A6-12B2-4F21-892D-727B1FA11BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0AA3A6-12B2-4F21-892D-727B1FA11BE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

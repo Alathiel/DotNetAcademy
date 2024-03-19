@@ -10,8 +10,7 @@
         "dependencies": {
           "FileUtility": "1.0.0",
           "System.Collections": "4.3.0",
-          "System.Configuration.ConfigurationManager": "8.0.0",
-          "ClassLibrary1": "1.0.0.0"
+          "System.Configuration.ConfigurationManager": "8.0.0"
         },
         "runtime": {
           "Employee_Project.dll": {}
@@ -75,16 +74,16 @@
         }
       },
       "FileUtility/1.0.0": {
+        "dependencies": {
+          "LogHandler": "1.0.0"
+        },
         "runtime": {
           "FileUtility.dll": {}
         }
       },
-      "ClassLibrary1/1.0.0.0": {
+      "LogHandler/1.0.0": {
         "runtime": {
-          "ClassLibrary1.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "LogHandler.dll": {}
         }
       }
     }
@@ -149,8 +148,8 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ClassLibrary1/1.0.0.0": {
-      "type": "reference",
+    "LogHandler/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

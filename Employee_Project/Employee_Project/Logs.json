@@ -1,0 +1,7 @@
+{
+  "Date": "2024-03-19T12:33:38.4343142+01:00",
+  "ErrorMessage": "Could not find file \u0027C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\a\u0027.",
+  "ErrorType": "FileNotFoundException",
+  "ErrorFromClass": "Utility",
+  "ErrorFromMethod": "ImportTXTFile"
+}

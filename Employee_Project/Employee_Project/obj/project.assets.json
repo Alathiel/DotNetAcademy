@@ -110,11 +110,24 @@
       "FileUtility/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "LogHandler": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/FileUtility.dll": {}
         },
         "runtime": {
           "bin/placeholder/FileUtility.dll": {}
+        }
+      },
+      "LogHandler/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LogHandler.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogHandler.dll": {}
         }
       }
     }
@@ -419,6 +432,11 @@
       "type": "project",
       "path": "../../FileUtility/FileUtility.csproj",
       "msbuildProject": "../../FileUtility/FileUtility.csproj"
+    },
+    "LogHandler/1.0.0": {
+      "type": "project",
+      "path": "../../LogHandler/LogHandler.csproj",
+      "msbuildProject": "../../LogHandler/LogHandler.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -429,23 +447,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fede\\.nuget\\packages\\": {},
+    "C:\\Users\\Betacom\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
+      "projectUniqueName": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
       "projectName": "Employee_Project",
-      "projectPath": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
-      "packagesPath": "C:\\Users\\fede\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\obj\\",
+      "projectPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
+      "packagesPath": "C:\\Users\\Betacom\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fede\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Betacom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -461,8 +479,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Projects\\DotNetAcademy\\FileUtility\\FileUtility.csproj": {
-              "projectPath": "F:\\Projects\\DotNetAcademy\\FileUtility\\FileUtility.csproj"
+            "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\FileUtility.csproj": {
+              "projectPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\FileUtility.csproj"
             }
           }
         }
@@ -507,7 +525,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

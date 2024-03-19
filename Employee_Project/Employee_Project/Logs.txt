@@ -1,0 +1,115 @@
+19/03/2024 10:45:51
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\aa'.
+Error Type: FileNotFoundException
+Error Class:    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllLines(String path, Encoding encoding)
+   at FileUtility.Utility.ImportTXTFile(String path) in C:\Users\Betacom\source\repos\DotNetAcademy\FileUtility\Utility.cs:line 16
+Error Method: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\aa'.
+19/03/2024 10:50:46
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class:    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllLines(String path, Encoding encoding)
+   at FileUtility.Utility.ImportTXTFile(String path) in C:\Users\Betacom\source\repos\DotNetAcademy\FileUtility\Utility.cs:line 16
+Error Method: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+19/03/2024 11:00:04
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+19/03/2024 11:06:03
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle CreateFile(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare, System.IO.FileOptions)
+Error Method: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+19/03/2024 11:25:26
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: 
+19/03/2024 11:29:25
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: Microsoft.Win32.SafeHandles.SafeFileHandle
+19/03/2024 11:33:14
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: 
+19/03/2024 11:34:23
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: System.Private.CoreLib
+19/03/2024 11:38:09
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: Microsoft.Win32.SafeHandles.SafeFileHandle
+19/03/2024 11:40:29
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: System.Collections.Generic.List`1[System.String] ImportTXTFile(System.String)
+Error Method: Microsoft.Win32.SafeHandles.SafeFileHandle
+19/03/2024 11:41:23
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: System.Collections.Generic.List`1[System.String] ImportTXTFile(System.String)
+19/03/2024 11:43:57
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: CreateFile
+Error Method: System.Collections.Generic.List`1[System.String] ImportTXTFile(System.String)
+19/03/2024 11:45:16
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: SafeFileHandle
+Error Method: System.Collections.Generic.List`1[System.String] ImportTXTFile(System.String)
+19/03/2024 11:45:53
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: SafeFileHandle
+Error Method: System.Collections.Generic.List`1[System.String] ImportTXTFile(System.String)
+19/03/2024 11:48:17
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: ImportTXTFile
+19/03/2024 11:52:00
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: ImportTXTFile
+
+
+19/03/2024 11:52:15
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Microsoft.Win32.SafeHandles.SafeFileHandle
+Error Method: ImportTXTFile
+
+
+19/03/2024 12:09:52
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Utility
+Error Method: ImportTXTFile
+
+
+19/03/2024 12:33:38
+Error Message: Could not find file 'C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\a'.
+Error Type: FileNotFoundException
+Error Class: Utility
+Error Method: ImportTXTFile
+
+
