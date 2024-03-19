@@ -6,6 +6,8 @@ internal class Program{
     {
         string workingDirectory = Environment.CurrentDirectory;
         ConfigurationManager.AppSettings["ProjectPath"] = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+        Console.WriteLine(EncryptionData.EncryptionData.Sha256Encrypt("aaaaa  aaaa"));
+        Console.ReadLine();
         Menu.ShowMainMenu();
     }
 }

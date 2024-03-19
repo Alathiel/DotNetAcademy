@@ -52,3 +52,5 @@ C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\ob
 C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.pdb
 C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\Employee_Project.genruntimeconfig.cache
 C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\obj\Debug\net8.0\ref\Employee_Project.dll
+C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\EncryptionData.dll
+C:\Users\Betacom\source\repos\DotNetAcademy\Employee_Project\Employee_Project\bin\Debug\net8.0\EncryptionData.pdb

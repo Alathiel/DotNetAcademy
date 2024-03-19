@@ -3,26 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\employee_project\\employee_project\\logs.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\logs.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\employee_project\\employee_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\employee_project\\employee_project\\logs.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\logs.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7AA20A07-435E-4B0D-A964-74EA2E67010F}|..\\FileUtility\\FileUtility.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\fileutility\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\employee_project\\employee_project\\blogic\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\blogic\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0434B511-37D8-4E09-84FA-D2C079D2FB20}|..\\EncryptionData\\EncryptionData.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\encryptiondata\\encryptiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D0AA3A6-12B2-4F21-892D-727B1FA11BE9}|..\\LogHandler\\LogHandler.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\loghandler\\logshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA20A07-435E-4B0D-A964-74EA2E67010F}|..\\FileUtility\\FileUtility.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\fileutility\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -42,7 +33,7 @@
               "RelativeDocumentMoniker": "..\\FileUtility\\Utility.cs",
               "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\Utility.cs",
               "RelativeToolTip": "..\\FileUtility\\Utility.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAwwBoAAAAuAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowBIAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T08:30:57.878Z",
               "IsPinned": true,
@@ -50,7 +41,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "LogsHandler.cs",
               "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\LogHandler\\LogsHandler.cs",
               "RelativeDocumentMoniker": "..\\LogHandler\\LogsHandler.cs",
@@ -64,54 +55,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\Menu.cs",
-              "RelativeDocumentMoniker": "Employee_Project\\BLogic\\Menu.cs",
-              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\BLogic\\Menu.cs",
-              "RelativeToolTip": "Employee_Project\\BLogic\\Menu.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwCEAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T11:35:49.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Logs.json",
-              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Logs.json",
-              "RelativeDocumentMoniker": "Employee_Project\\Logs.json",
-              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Logs.json",
-              "RelativeToolTip": "Employee_Project\\Logs.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-19T11:33:42.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Program.cs",
               "RelativeDocumentMoniker": "Employee_Project\\Program.cs",
               "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Program.cs",
               "RelativeToolTip": "Employee_Project\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T11:23:54.793Z",
+              "WhenOpened": "2024-03-19T14:23:31.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Logs.txt",
-              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Logs.txt",
-              "RelativeDocumentMoniker": "Employee_Project\\Logs.txt",
-              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Logs.txt",
-              "RelativeToolTip": "Employee_Project\\Logs.txt",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAGkAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-03-19T11:10:09.737Z",
+              "DocumentIndex": 1,
+              "Title": "EncryptionData.cs",
+              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.cs",
+              "RelativeDocumentMoniker": "..\\EncryptionData\\EncryptionData.cs",
+              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.cs",
+              "RelativeToolTip": "..\\EncryptionData\\EncryptionData.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBEAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T14:14:58.002Z",
               "EditorCaption": ""
             }
           ]

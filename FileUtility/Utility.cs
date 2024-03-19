@@ -16,7 +16,7 @@ namespace FileUtility
                 fileName = Console.ReadLine();
                 Console.WriteLine(path);
                 //if (File.Exists(path + @"\" + fileName))
-                    return File.ReadAllLines(path + @"\" + fileName).ToList();
+                return File.ReadAllLines(path + @"\" + fileName).ToList();
 
                 //else 
                 {

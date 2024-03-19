@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\EncryptionData\EncryptionData.csproj" />
     <ProjectReference Include="..\..\FileUtility\FileUtility.csproj" />
   </ItemGroup>
 
