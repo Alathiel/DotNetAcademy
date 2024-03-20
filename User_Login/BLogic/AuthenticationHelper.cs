@@ -26,7 +26,7 @@ namespace User_Login.BLogic
                 User tempUser = ImportXMLFile(ConfigurationManager.AppSettings["ProjectPath"], ConfigurationManager.AppSettings["Credentials"]);
                 if (tempUser.Username.Equals(tempUsername))
                 {
-                    if (EncryptionData.EncryptionData.SaltDecrypt(tempPw, tempUser.Salt, tempUser.Password)) 
+                    if (tempUser.Password.Equals(EncryptionData.EncryptionData.SaltDecrypt(tempPw, tempUser.Salt))) 
                         return true;
                 }
             }

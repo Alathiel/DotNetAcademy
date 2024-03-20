@@ -23,9 +23,26 @@ namespace EncryptionData
             return string.Empty;
         }
 
-        
-        public static string Sha256Decrypt()
+        /// <summary>
+        /// Check if an inserted password is the same of the encrypted one
+        /// </summary>
+        /// <param name="pw"></param>
+        /// <param name="encryptedPw"></param>
+        /// <returns>bool</returns>
+        public static string Sha256Decrypt(string pw)
         {
+            var sha256 = SHA256.Create();
+            byte[] bytes = Encoding.UTF8.GetBytes(pw);
+
+            if (pw.Length > 0)
+            {
+                try
+                {
+                    byte[] hash = sha256.ComputeHash(bytes);
+                    return BitConverter.ToString(hash, 0, hash.Length).Replace("-", "");
+                }
+                catch (Exception e) { Console.WriteLine(e); }
+            }
             return string.Empty;
         }
         
@@ -55,7 +72,7 @@ namespace EncryptionData
             return new KeyValuePair<string, string>();
          }
 
-        public static bool SaltDecrypt(string pw, string encryptedSalt, string encryptedPw)
+        public static string SaltDecrypt(string pw, string encryptedSalt)
         {
 
             byte[] decryptSalt = Convert.FromBase64String(encryptedSalt);
@@ -69,7 +86,7 @@ namespace EncryptionData
                     iterationCount: 100000,
                     numBytesRequested: 32));
 
-            return decryptedResult.Equals(encryptedPw);
+            return decryptedResult;
         }
     }
 }
