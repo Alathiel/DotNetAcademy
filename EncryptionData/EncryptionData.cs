@@ -30,7 +30,7 @@ namespace EncryptionData
         }
         
          public static KeyValuePair<string,string> SaltEncrypt(string pw)
-        {
+         {
             byte[] byteSalt = new byte[16];
             string encryptedResult = string.Empty;
             string encryptedSalt = string.Empty;
@@ -49,22 +49,27 @@ namespace EncryptionData
                 //encrypt salt
                 encryptedSalt = Convert.ToBase64String(byteSalt);
 
-                byte[] decryptedSalt = Convert.FromBase64String(encryptedSalt);
-                string decryptedResult = string.Empty;
-
-                /*decryptedResult = Convert.ToBase64String(
-                    KeyDerivation.Pbkdf2(
-                        password:
-                        salt:
-                        prf:
-                        iterationCount:
-                        numBytesRequested:
-                        ));*/
                 return new KeyValuePair<string, string> (encryptedResult,encryptedSalt);
             }
             catch( Exception e ) { Console.WriteLine( e ); }
             return new KeyValuePair<string, string>();
+         }
+
+        public static bool SaltDecrypt(string pw, string encryptedSalt, string encryptedPw)
+        {
+
+            byte[] decryptSalt = Convert.FromBase64String(encryptedSalt);
+            string decryptedResult = string.Empty;
+
+            decryptedResult = Convert.ToBase64String(
+                KeyDerivation.Pbkdf2(
+                    password: pw,
+                    salt: decryptSalt,
+                    prf: KeyDerivationPrf.HMACSHA256,
+                    iterationCount: 100000,
+                    numBytesRequested: 32));
+
+            return decryptedResult.Equals(encryptedPw);
         }
-        
     }
 }

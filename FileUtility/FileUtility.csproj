@@ -6,8 +6,5 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\LogHandler\LogHandler.csproj" />
-  </ItemGroup>
 
 </Project>

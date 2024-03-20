@@ -1,19 +1,19 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\",
+  "WorkspaceRootPath": "F:\\Projects\\DotNetAcademy\\Employee_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0434B511-37D8-4E09-84FA-D2C079D2FB20}|..\\EncryptionData\\EncryptionData.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\encryptiondata\\encryptiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0434B511-37D8-4E09-84FA-D2C079D2FB20}|..\\EncryptionData\\EncryptionData.csproj|f:\\projects\\dotnetacademy\\encryptiondata\\encryptiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\employee_project\\employee_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|f:\\projects\\dotnetacademy\\employee_project\\employee_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BC0EF0B-A85D-4BF1-B68C-77A0CBFADA17}|Employee_Project\\Employee_Project.csproj|solutionrelative:employee_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D0AA3A6-12B2-4F21-892D-727B1FA11BE9}|..\\LogHandler\\LogHandler.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\loghandler\\logshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\Utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AA20A07-435E-4B0D-A964-74EA2E67010F}|..\\FileUtility\\FileUtility.csproj|c:\\users\\betacom\\source\\repos\\dotnetacademy\\fileutility\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\LogHandler\\LogsHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,61 +23,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Utility.cs",
               "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\Utility.cs",
-              "RelativeDocumentMoniker": "..\\FileUtility\\Utility.cs",
               "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\Utility.cs",
-              "RelativeToolTip": "..\\FileUtility\\Utility.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAowBIAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T08:30:57.878Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LogsHandler.cs",
               "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\LogHandler\\LogsHandler.cs",
-              "RelativeDocumentMoniker": "..\\LogHandler\\LogsHandler.cs",
               "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\LogHandler\\LogsHandler.cs",
-              "RelativeToolTip": "..\\LogHandler\\LogsHandler.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAYwEsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T08:49:49.709Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EncryptionData.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\EncryptionData\\EncryptionData.cs",
+              "RelativeDocumentMoniker": "..\\EncryptionData\\EncryptionData.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\EncryptionData\\EncryptionData.cs",
+              "RelativeToolTip": "..\\EncryptionData\\EncryptionData.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwDQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T08:22:25.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Program.cs",
+              "DocumentMoniker": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Program.cs",
               "RelativeDocumentMoniker": "Employee_Project\\Program.cs",
-              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Program.cs",
+              "ToolTip": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Program.cs",
               "RelativeToolTip": "Employee_Project\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T14:23:31.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EncryptionData.cs",
-              "DocumentMoniker": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.cs",
-              "RelativeDocumentMoniker": "..\\EncryptionData\\EncryptionData.cs",
-              "ToolTip": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.cs",
-              "RelativeToolTip": "..\\EncryptionData\\EncryptionData.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAcwDAAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T14:14:58.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T14:23:31.144Z"
             }
           ]
         }
