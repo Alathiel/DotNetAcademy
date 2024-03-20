@@ -1,0 +1,48 @@
+ISBN:9789876543210
+Autore:James Rolling
+Libro:Amazzonia
+Anno Publicazione: 2004
+Prezzo:7.50
+Genere:Avventura
+****************************
+ISBN:9781234567890
+Autore:Isaac Asimov
+Libro:Io, Robot
+Anno Publicazione: 1962
+Prezzo:9.90
+Genere:Fantascienza
+****************************
+ISBN:9789876543210
+Autore:Isaac Asimov
+Libro:La Fondazione
+Anno Publicazione: 1957
+Prezzo:13.00
+Genere:Fantascienza
+****************************
+ISBN:9780987654321
+Autore:Wilbur Smith
+Libro:Alle Fonti del Nilo
+Anno Publicazione: 2017
+Prezzo:10.99
+Genere:Avventura
+****************************
+ISBN:9781234567890
+Autore:Clive Cussler
+Libro:Artico
+Anno Publicazione: 2008
+Prezzo:12.90
+Genere:Avventura
+****************************
+ISBN:9789876543210
+Autore:Arthur C. Clarke
+Libro:2001 Odissea nello Spazio
+Anno Publicazione: 1963
+Prezzo:10.00
+Genere:Fantascienza
+****************************
+ISBN:9781234567890
+Autore:Umberto Eco
+Libro:Il Nome della Rosa
+Anno Publicazione: 1983
+Prezzo:14.00
+Genere:Storico

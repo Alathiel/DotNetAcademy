@@ -7,7 +7,7 @@ namespace FileUtility
     public class Utility
     {
         static Utility u = new Utility();
-        public static List<string> ImportTXTFile(string path, string fileName = "")
+        public static string[] ImportTXTFile(string path, string fileName = "")
         {
             Console.Clear();
             try
@@ -18,7 +18,7 @@ namespace FileUtility
                 }
                 else { 
                     if (File.Exists(path + @"\" + fileName))
-                    return File.ReadAllLines(path + @"\" + fileName).ToList();
+                    return File.ReadAllLines(path + @"\" + fileName);
 
                     else 
                     {
