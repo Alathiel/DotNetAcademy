@@ -1,59 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Book>
-    <ISBN>163093F662ACFD595680DB8C84764A9455516B08A0F85499F1658A4C143D8CAD</ISBN>
-    <Author>James Rolling</Author>
-    <Name>Amazzonia</Name>
-    <Year>2004</Year>
-    <Price>7.50</Price>
+<ArrayOfAuthor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Author>
+    <Name>James Rolling</Name>
     <Genre>Avventura</Genre>
-  </Book>
-  <Book>
-    <ISBN>1AEAADB82950A985A2370AB14BCA30B781CBBFD087AB79E2CFDC7F1919201E7C</ISBN>
-    <Author>Isaac Asimov</Author>
-    <Name>Io, Robot</Name>
-    <Year>1962</Year>
-    <Price>9.90</Price>
+    <Books>
+      <Book>
+        <ISBN>163093F662ACFD595680DB8C84764A9455516B08A0F85499F1658A4C143D8CAD</ISBN>
+        <Name>Amazzonia</Name>
+        <Year>2004</Year>
+        <Price>750</Price>
+      </Book>
+    </Books>
+  </Author>
+  <Author>
+    <Name>Isaac Asimov</Name>
     <Genre>Fantascienza</Genre>
-  </Book>
-  <Book>
-    <ISBN>163093F662ACFD595680DB8C84764A9455516B08A0F85499F1658A4C143D8CAD</ISBN>
-    <Author>Isaac Asimov</Author>
-    <Name>La Fondazione</Name>
-    <Year>1957</Year>
-    <Price>13.00</Price>
-    <Genre>Fantascienza</Genre>
-  </Book>
-  <Book>
-    <ISBN>EAA7A120B8A3E99CE80E0A3EB3F15D72CB7A2360C3204F3B90770C8589EAD483</ISBN>
-    <Author>Wilbur Smith</Author>
-    <Name>Alle Fonti del Nilo</Name>
-    <Year>2017</Year>
-    <Price>10.99</Price>
+    <Books>
+      <Book>
+        <ISBN>1AEAADB82950A985A2370AB14BCA30B781CBBFD087AB79E2CFDC7F1919201E7C</ISBN>
+        <Name>Io, Robot</Name>
+        <Year>1962</Year>
+        <Price>990</Price>
+      </Book>
+      <Book>
+        <ISBN>163093F662ACFD595680DB8C84764A9455516B08A0F85499F1658A4C143D8CAD</ISBN>
+        <Name>La Fondazione</Name>
+        <Year>1957</Year>
+        <Price>1300</Price>
+      </Book>
+    </Books>
+  </Author>
+  <Author>
+    <Name>Wilbur Smith</Name>
     <Genre>Avventura</Genre>
-  </Book>
-  <Book>
-    <ISBN>1AEAADB82950A985A2370AB14BCA30B781CBBFD087AB79E2CFDC7F1919201E7C</ISBN>
-    <Author>Clive Cussler</Author>
-    <Name>Artico</Name>
-    <Year>2008</Year>
-    <Price>12.90</Price>
+    <Books>
+      <Book>
+        <ISBN>EAA7A120B8A3E99CE80E0A3EB3F15D72CB7A2360C3204F3B90770C8589EAD483</ISBN>
+        <Name>Alle Fonti del Nilo</Name>
+        <Year>2017</Year>
+        <Price>1099</Price>
+      </Book>
+    </Books>
+  </Author>
+  <Author>
+    <Name>Clive Cussler</Name>
     <Genre>Avventura</Genre>
-  </Book>
-  <Book>
-    <ISBN>163093F662ACFD595680DB8C84764A9455516B08A0F85499F1658A4C143D8CAD</ISBN>
-    <Author>Arthur C. Clarke</Author>
-    <Name>2001 Odissea nello Spazio</Name>
-    <Year>1963</Year>
-    <Price>10.00</Price>
+    <Books>
+      <Book>
+        <ISBN>1AEAADB82950A985A2370AB14BCA30B781CBBFD087AB79E2CFDC7F1919201E7C</ISBN>
+        <Name>Artico</Name>
+        <Year>2008</Year>
+        <Price>1290</Price>
+      </Book>
+    </Books>
+  </Author>
+  <Author>
+    <Name>Arthur C. Clarke</Name>
     <Genre>Fantascienza</Genre>
-  </Book>
-  <Book>
-    <ISBN>1AEAADB82950A985A2370AB14BCA30B781CBBFD087AB79E2CFDC7F1919201E7C</ISBN>
-    <Author>Umberto Eco</Author>
-    <Name>Il Nome della Rosa</Name>
-    <Year>1983</Year>
-    <Price>14.00</Price>
+    <Books>
+      <Book>
+        <ISBN>163093F662ACFD595680DB8C84764A9455516B08A0F85499F1658A4C143D8CAD</ISBN>
+        <Name>2001 Odissea nello Spazio</Name>
+        <Year>1963</Year>
+        <Price>1000</Price>
+      </Book>
+    </Books>
+  </Author>
+  <Author>
+    <Name>Umberto Eco</Name>
     <Genre>Storico</Genre>
-  </Book>
-</ArrayOfBook>
+    <Books>
+      <Book>
+        <ISBN>1AEAADB82950A985A2370AB14BCA30B781CBBFD087AB79E2CFDC7F1919201E7C</ISBN>
+        <Name>Il Nome della Rosa</Name>
+        <Year>1983</Year>
+        <Price>1400</Price>
+      </Book>
+    </Books>
+  </Author>
+</ArrayOfAuthor>

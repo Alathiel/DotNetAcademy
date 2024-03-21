@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Frozen;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -48,14 +49,14 @@ namespace Books.BLogic
 
                 finished = false;
                 tempBooks = books.ToList();
-
                 while (!finished)
                 {
                     Book tempBook = new Book(
                             tempBooks[0].Split(':')[1],
                             tempBooks[2].Split(':')[1],
                             Convert.ToInt16(tempBooks[3].Split(':')[1]),
-                            Convert.ToDecimal(tempBooks[4].Split(':')[1])
+                            decimal.Parse(tempBooks[4].Split(':')[1], CultureInfo.InvariantCulture.NumberFormat)
+
                             );
                     tempCheck = importedAuthors.FindAll(a => a.Name == tempBooks[1].Split(':')[1]);
 
@@ -83,23 +84,27 @@ namespace Books.BLogic
             list.ForEach(author =>
             {
                 Console.WriteLine(author.Name);
-                author.Books.ForEach(b => Console.WriteLine(b.Name));
+                author.Books.ForEach(b => Console.WriteLine(b.Name+" "+b.Price));
             });
             Console.ReadLine();
         }
 
-        internal bool ExportXML(string path, List<Book> list, string fileName = "")
+        internal bool ExportXML(string path, List<Author> list, string fileName = "")
         {
             try 
             {
-                List <Book> tempBooks = list;
-                tempBooks.ForEach(book => 
+                List <Author> tempAuthor = list;
+                tempAuthor.ForEach(a =>
                 {
-                    book.ISBN = EncryptionData.EncryptionData.Sha256Encrypt(book.ISBN);
+                    a.Books.ForEach(book =>
+                    {
+                        book.ISBN = EncryptionData.EncryptionData.Sha256Encrypt(book.ISBN);
+                    });
                 });
-                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Book>));
+                
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Author>));
                 StreamWriter writer = new StreamWriter(path + @"\" + fileName);
-                xmlSerializer.Serialize(writer, tempBooks);
+                xmlSerializer.Serialize(writer, tempAuthor);
                 writer.Close();
                 return true;
             }
@@ -107,49 +112,84 @@ namespace Books.BLogic
             return false;
         }
 
-        internal bool CheckISBN(List<Book> books)
+        internal bool CheckISBN(List<Author> authors)
         {
             bool result = false;
-            books.ForEach(book =>
+            authors.ForEach(a =>
             {
-                books.ForEach(book2 =>
+                a.Books.ForEach(book =>
                 {
-                    if (book.ISBN == book2.ISBN && book.Name != book.Name)
+                    if (a.Books.GroupBy(b => b.ISBN).Count() > 1)
                         result = true;
                 });
             });
             return result;
         }
 
-        /*internal void GrpByGenre(List<Book> books)
+        internal void GrpByGenre(List<Author> authors) // not working
         {
             Console.Clear();
-            books.GroupBy(book => book.Genre).ToList().ForEach(b => { 
-                Console.WriteLine($"Genre: {b.Key} - Books: {b.Count()}");
+            authors.GroupBy(a => a.Genre).ToList().ForEach(a => {
+                Console.Write($"Genre: {a.Key} - Numero Libri: {a}");
+                foreach (var b in a)
+                {
+                    Console.WriteLine(b.Books.Count());
+                }
+                Console.WriteLine();
             });
             Console.ReadLine();
         }
 
-        internal void WorstPrice(List<Book> books)
+        internal void WorstPrice(List<Author> authors)
         {
-            var tempBook = books.MaxBy(book => book.Price);
             Console.Clear();
-            Console.WriteLine($"Author: {tempBook.Author} - Name: {tempBook.Name} - Price: {tempBook.Price}");
+            var tempBook = authors.Select(a => new {Name = a.Name, Books= a.Books})
+                .Select(b => new {Name = b.Name, Book = b.Books.MaxBy(book => book.Price) });
+            List<Book> temp = [];
+            foreach (var item in tempBook)
+            {
+                temp.Add(item.Book);
+                
+            }
+            var temp2 = temp.MaxBy(t => t.Price);
+
+            foreach (var item in tempBook)
+            {
+                if(temp2 == item.Book) {
+                    Console.WriteLine($"Name: {item.Name} - ISBN: {temp2.ISBN} - Price: {temp2.Price}");
+                }
+            }
             Console.ReadLine();
         }
 
-        internal void AvgCostGenre(List<Book> books)
+        internal void AvgCostGenre(List<Author> authors)
         {
-            var avg = books.GroupBy(book => book.Genre).Select( g => new {Genre = g.Key, Avg = g.Average(s => s.Price)});
+            var temp = authors.GroupBy(a => a.Genre); //.Select(t => t.Select(t => new { Genre = t.Genre, Avg = t.Books.Average(b => b.Price) }))
+            Tuple<string, List<Book>> tempBooks;
+            foreach (var t in temp)
+            {
+
+                foreach (var t2 in t)
+                {
+                    //tempBooks.Item1 = t2.Genre;
+                    //tempBooks.Item2 = t2.Books;
+                    //Console.WriteLine(temp2);
+                    Console.ReadLine();
+                }
+            }
+
+
+            /*var avg = books.GroupBy(book => book.Genre).Select( g => new {Genre = g.Key, Avg = g.Average(s => s.Price)});
             Console.Clear();
             foreach (var category in avg)
             {
                 Console.WriteLine($"Genre: {category.Genre} - Avg: {category.Avg.ToString("0.00")}");
             }
-            Console.ReadLine();
+            Console.ReadLine();*/
+
         }
 
-        internal void SearchYear(List<Book> books)
+        /*internal void SearchYear(List<Book> books)
         {
             Console.Clear();
             var tempBooks = books.FindAll(b => b.Year == 2017);

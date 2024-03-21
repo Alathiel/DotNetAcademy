@@ -26,7 +26,6 @@ namespace Books.BLogic
                 {
                     case Enums.Menu.DatasImport:
                         authors = bookHelper.BookImport(Utility.ImportTXTFile(ConfigurationManager.AppSettings["Directory"], ConfigurationManager.AppSettings["BooksFile"]));
-                        bookHelper.ShowAuthors(authors);
                         Console.Clear();
                         if (authors.Count > 0)
                             Console.WriteLine("Books import successful.");
@@ -35,11 +34,11 @@ namespace Books.BLogic
                         Console.ReadLine();
                         break;
 
-                    /*case Enums.Menu.ExportToXML:
+                    case Enums.Menu.ExportToXML:
                         Console.Clear();
-                        //if(bookHelper.ExportXML(ConfigurationManager.AppSettings["Directory"], authors, ConfigurationManager.AppSettings["XMLBooksFile"]))
-                            //Console.WriteLine("Books export successful.");
-                        //else
+                        if(bookHelper.ExportXML(ConfigurationManager.AppSettings["Directory"], authors, ConfigurationManager.AppSettings["XMLBooksFile"]))
+                            Console.WriteLine("Books export successful.");
+                        else
                             Console.WriteLine("Unexpected error.");
                         Console.ReadLine();
                         break;
@@ -48,19 +47,19 @@ namespace Books.BLogic
                         Console.Write("Inserisci la password per accedere alle statistiche: ");
                         string tempPw = Console.ReadLine();
                         if (ConfigurationManager.AppSettings["StatisticsPwe"].Equals(EncryptionData.EncryptionData.SaltDecrypt(tempPw, ConfigurationManager.AppSettings["PweSalt"])))
-                            //ShowStatisticsMenu();
+                            ShowStatisticsMenu();
                         else 
                         { 
                             Console.WriteLine("Password inserita errata.");
                             Console.ReadLine();
                         }
-                        break;*/
+                        break;
                 }
 
             } while (menuChoice.Key.ToString() != "F");
         }
 
-        /*private static void ShowStatisticsMenu()
+        private static void ShowStatisticsMenu()
         {
             ConsoleKeyInfo menuChoice;
             do 
@@ -81,27 +80,27 @@ namespace Books.BLogic
                 {
                     case Enums.Statistics.CheckISBN:
                         Console.Clear();
-                        if (bookHelper.CheckISBN(books))
+                        if (bookHelper.CheckISBN(authors))
                             Console.WriteLine("Esistono due libri differenti con lo stesso ISBN.");
                         else
                             Console.WriteLine("Non esistono due libri differenti con lo stesso ISBN.");
                         Console.ReadLine();
                         break;
                     case Enums.Statistics.GrpByGenre:
-                        bookHelper.GrpByGenre(books);
+                        bookHelper.GrpByGenre(authors);
                         break;
                     case Enums.Statistics.WorstPrice:
-                        bookHelper.WorstPrice(books);
+                        bookHelper.WorstPrice(authors);
                         break;
-                    case Enums.Statistics.AvgCostGenre:
-                        bookHelper.AvgCostGenre(books);
-                        break;
-                    case Enums.Statistics.SearchYear:
-                        bookHelper.SearchYear(books);
-                        break;
+                        case Enums.Statistics.AvgCostGenre:
+                            bookHelper.AvgCostGenre(authors);
+                            break;
+                        /*case Enums.Statistics.SearchYear:
+                            bookHelper.SearchYear(books);
+                            break;*/
                 }
 
             } while (menuChoice.Key.ToString() != "F");
-        }*/
+        }
     }
 }
