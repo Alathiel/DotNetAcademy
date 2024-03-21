@@ -40,14 +40,20 @@ namespace FileUtility
             return [];
         }
 
-        /*public static bool ExportXMLFile(string path, User obj, string fileName = "basename.xml")
+        public static bool ExportXMLFile(string path, List<string> list, string fileName = "basename.xml")
         {
-            
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(User));
-            StreamWriter writer = new StreamWriter(path + @"\" + fileName);
-            xmlSerializer.Serialize(writer, obj);
-            return true;
-        }*/
+            try { 
+
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<string>));
+                StreamWriter writer = new StreamWriter(path + @"\" + fileName);
+                xmlSerializer.Serialize(writer, list);
+                writer.Close();
+                return true;
+
+            }catch (Exception ex) { Console.WriteLine(ex); }
+
+            return false;
+        }
 
 
         public static void ImportJSONFile()
@@ -66,7 +72,7 @@ namespace FileUtility
             try
             {
                 Console.Clear();
-                if(fileName.Equals("basename.json"))
+                if(fileName.Equals("basename.json") || fileName==string.Empty)
                 {
                     Console.Write("Inserisci il nome che dovra' avere il file esportato: ");
                     fileName = Console.ReadLine();
