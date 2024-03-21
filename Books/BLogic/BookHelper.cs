@@ -13,26 +13,57 @@ namespace Books.BLogic
 {
     internal class BookHelper
     {
-        internal List<Book> BookImport(string []books)
+        internal List<Author> BookImport(string []books)
         {
             List<Book> importedBooks = [];
+            List<Author> importedAuthors = [];
             List<string> tempBooks = books.ToList();
             bool finished = false;
+
+            List<Author> tempCheck = [];
             try 
             {
-                while(!finished)
+                while (!finished)
                 {
-                    importedBooks.Add(
-                        new Book(
-                            tempBooks[0].Split(':')[1],
+                    tempCheck = importedAuthors.FindAll(a => a.Name == tempBooks[1].Split(':')[1]);
+
+                    if (tempCheck.Count == 0)
+                    {
+                        importedAuthors.Add(
+                        new Author(
                             tempBooks[1].Split(':')[1],
-                            tempBooks[2].Split(':')[1],
-                            Convert.ToInt16(tempBooks[3].Split(':')[1]),
-                            Convert.ToDecimal(tempBooks[4].Split(':')[1]),
                             tempBooks[5].Split(':')[1]
                             )
                         );
-                    if(tempBooks.Count > 6)
+                    }
+
+                    if (tempBooks.Count > 6)
+                        tempBooks.RemoveRange(0, 6);
+                    else
+                        finished = true;
+
+                    if (tempBooks[0].Contains('*'))
+                        tempBooks.RemoveAt(0);
+                }
+
+                finished = false;
+                tempBooks = books.ToList();
+
+                while (!finished)
+                {
+                    Book tempBook = new Book(
+                            tempBooks[0].Split(':')[1],
+                            tempBooks[2].Split(':')[1],
+                            Convert.ToInt16(tempBooks[3].Split(':')[1]),
+                            Convert.ToDecimal(tempBooks[4].Split(':')[1])
+                            );
+                    tempCheck = importedAuthors.FindAll(a => a.Name == tempBooks[1].Split(':')[1]);
+
+                    tempCheck[0].Books.Add(tempBook);
+                    
+
+                    
+                    if (tempBooks.Count > 6)
                         tempBooks.RemoveRange(0,6);
                     else
                         finished = true;
@@ -40,17 +71,19 @@ namespace Books.BLogic
                     if (tempBooks[0].Contains('*'))
                         tempBooks.RemoveAt(0);
                 }
-                return importedBooks;
+                
+                return importedAuthors;
             }
             catch(Exception ex) { Console.WriteLine(ex); }
             return [];
         }
 
-        internal void BookShow(List<Book> list)
+        internal void ShowAuthors(List<Author> list)
         {
-            list.ForEach(book =>
+            list.ForEach(author =>
             {
-                Console.WriteLine(book.Name);
+                Console.WriteLine(author.Name);
+                author.Books.ForEach(b => Console.WriteLine(b.Name));
             });
             Console.ReadLine();
         }
@@ -88,7 +121,7 @@ namespace Books.BLogic
             return result;
         }
 
-        internal void GrpByGenre(List<Book> books)
+        /*internal void GrpByGenre(List<Book> books)
         {
             Console.Clear();
             books.GroupBy(book => book.Genre).ToList().ForEach(b => { 
@@ -140,6 +173,6 @@ namespace Books.BLogic
                 Console.WriteLine($"Name: {book.Name} - Year: {book.Year} ");
             });
             Console.ReadLine();
-        }
+        }*/
     }
 }

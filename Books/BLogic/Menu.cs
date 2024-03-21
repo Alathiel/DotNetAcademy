@@ -8,7 +8,7 @@ namespace Books.BLogic
 
         static BookHelper bookHelper = new BookHelper();
 
-        static List<Book> books = [];
+        static List<Author> authors = [];
         internal static void ShowMainMenu()
         {
             ConsoleKeyInfo menuChoice;
@@ -25,20 +25,21 @@ namespace Books.BLogic
                 switch ((Enums.Menu)menuChoice.Key)
                 {
                     case Enums.Menu.DatasImport:
-                        books = bookHelper.BookImport(Utility.ImportTXTFile(ConfigurationManager.AppSettings["Directory"], ConfigurationManager.AppSettings["BooksFile"]));
+                        authors = bookHelper.BookImport(Utility.ImportTXTFile(ConfigurationManager.AppSettings["Directory"], ConfigurationManager.AppSettings["BooksFile"]));
+                        bookHelper.ShowAuthors(authors);
                         Console.Clear();
-                        if (books.Count > 0)
+                        if (authors.Count > 0)
                             Console.WriteLine("Books import successful.");
                         else
                             Console.WriteLine("Unexpected error.");
                         Console.ReadLine();
                         break;
 
-                    case Enums.Menu.ExportToXML:
+                    /*case Enums.Menu.ExportToXML:
                         Console.Clear();
-                        if(bookHelper.ExportXML(ConfigurationManager.AppSettings["Directory"], books, ConfigurationManager.AppSettings["XMLBooksFile"]))
-                            Console.WriteLine("Books export successful.");
-                        else
+                        //if(bookHelper.ExportXML(ConfigurationManager.AppSettings["Directory"], authors, ConfigurationManager.AppSettings["XMLBooksFile"]))
+                            //Console.WriteLine("Books export successful.");
+                        //else
                             Console.WriteLine("Unexpected error.");
                         Console.ReadLine();
                         break;
@@ -47,19 +48,19 @@ namespace Books.BLogic
                         Console.Write("Inserisci la password per accedere alle statistiche: ");
                         string tempPw = Console.ReadLine();
                         if (ConfigurationManager.AppSettings["StatisticsPwe"].Equals(EncryptionData.EncryptionData.SaltDecrypt(tempPw, ConfigurationManager.AppSettings["PweSalt"])))
-                            ShowStatisticsMenu();
+                            //ShowStatisticsMenu();
                         else 
                         { 
                             Console.WriteLine("Password inserita errata.");
                             Console.ReadLine();
                         }
-                        break;
+                        break;*/
                 }
 
             } while (menuChoice.Key.ToString() != "F");
         }
 
-        private static void ShowStatisticsMenu()
+        /*private static void ShowStatisticsMenu()
         {
             ConsoleKeyInfo menuChoice;
             do 
@@ -101,6 +102,6 @@ namespace Books.BLogic
                 }
 
             } while (menuChoice.Key.ToString() != "F");
-        }
+        }*/
     }
 }
