@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Frozen;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -28,7 +29,7 @@ namespace Books.BLogic
                             tempBooks[1].Split(':')[1],
                             tempBooks[2].Split(':')[1],
                             Convert.ToInt16(tempBooks[3].Split(':')[1]),
-                            Convert.ToDecimal(tempBooks[4].Split(':')[1]),
+                            Decimal.Parse(tempBooks[4].Split(':')[1],CultureInfo.InvariantCulture.NumberFormat),
                             tempBooks[5].Split(':')[1]
                             )
                         );
