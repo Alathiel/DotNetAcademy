@@ -45,7 +45,8 @@ namespace Books.BLogic
                     case Enums.Menu.Statistics:
                         Console.Clear();
                         Console.Write("Inserisci la password per accedere alle statistiche: ");
-                        if (Console.ReadLine().Equals(ConfigurationManager.AppSettings["StatisticsPwe"]))
+                        string tempPw = Console.ReadLine();
+                        if (ConfigurationManager.AppSettings["StatisticsPwe"].Equals(EncryptionData.EncryptionData.SaltDecrypt(tempPw, ConfigurationManager.AppSettings["PweSalt"])))
                             ShowStatisticsMenu();
                         else 
                         { 

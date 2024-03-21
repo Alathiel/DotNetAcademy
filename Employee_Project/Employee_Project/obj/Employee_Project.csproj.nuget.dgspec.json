@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj": {}
+    "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj": {
+    "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
+        "projectUniqueName": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
         "projectName": "Employee_Project",
-        "projectPath": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
-        "packagesPath": "C:\\Users\\fede\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\DotNetAcademy\\Employee_Project\\Employee_Project\\obj\\",
+        "projectPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\Employee_Project.csproj",
+        "packagesPath": "C:\\Users\\Betacom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\Employee_Project\\Employee_Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fede\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Betacom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Projects\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj": {
-                "projectPath": "F:\\Projects\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj"
+              "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj": {
+                "projectPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj"
               },
-              "F:\\Projects\\DotNetAcademy\\FileUtility\\FileUtility.csproj": {
-                "projectPath": "F:\\Projects\\DotNetAcademy\\FileUtility\\FileUtility.csproj"
+              "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\FileUtility.csproj": {
+                "projectPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\FileUtility.csproj"
               }
             }
           }
@@ -82,24 +82,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj": {
+    "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj",
+        "projectUniqueName": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj",
         "projectName": "EncryptionData",
-        "projectPath": "F:\\Projects\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj",
-        "packagesPath": "C:\\Users\\fede\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\DotNetAcademy\\EncryptionData\\obj\\",
+        "projectPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\EncryptionData.csproj",
+        "packagesPath": "C:\\Users\\Betacom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\EncryptionData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fede\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Betacom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -153,93 +153,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Projects\\DotNetAcademy\\FileUtility\\FileUtility.csproj": {
+    "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\FileUtility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\DotNetAcademy\\FileUtility\\FileUtility.csproj",
+        "projectUniqueName": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\FileUtility.csproj",
         "projectName": "FileUtility",
-        "projectPath": "F:\\Projects\\DotNetAcademy\\FileUtility\\FileUtility.csproj",
-        "packagesPath": "C:\\Users\\fede\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\DotNetAcademy\\FileUtility\\obj\\",
+        "projectPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\FileUtility.csproj",
+        "packagesPath": "C:\\Users\\Betacom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Betacom\\source\\repos\\DotNetAcademy\\FileUtility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fede\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "F:\\Projects\\DotNetAcademy\\LogHandler\\LogHandler.csproj": {
-                "projectPath": "F:\\Projects\\DotNetAcademy\\LogHandler\\LogHandler.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "F:\\Projects\\DotNetAcademy\\LogHandler\\LogHandler.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\Projects\\DotNetAcademy\\LogHandler\\LogHandler.csproj",
-        "projectName": "LogHandler",
-        "projectPath": "F:\\Projects\\DotNetAcademy\\LogHandler\\LogHandler.csproj",
-        "packagesPath": "C:\\Users\\fede\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\DotNetAcademy\\LogHandler\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\fede\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Betacom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -271,6 +202,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -287,7 +224,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
