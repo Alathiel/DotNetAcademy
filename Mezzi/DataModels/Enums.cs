@@ -8,12 +8,12 @@ namespace Mezzi.DataModels
 {
     internal class Enums
     {
-        internal enum Type{ 
-            Bicicletta,
-            Automobile,
-            Aereo,
-            Monopattino,
-            Nave,
+        internal enum Type{
+            Bicycle,
+            Car,
+            Airplane,
+            ElectricScooter,
+            Ship,
         }
 
         internal enum Color
