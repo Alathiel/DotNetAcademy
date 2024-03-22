@@ -115,13 +115,22 @@ namespace Books.BLogic
         internal bool CheckISBN(List<Author> authors)
         {
             bool result = false;
-            authors.ForEach(a =>
+            List<Book> tempBooks = [];
+            authors.ForEach(author =>
             {
-                a.Books.ForEach(book =>
+                author.Books.ForEach(book =>
                 {
-                    if (a.Books.GroupBy(b => b.ISBN).Count() > 1)
-                        result = true;
+                    tempBooks.Add(book);
                 });
+            });
+
+            tempBooks.GroupBy(b => b.ISBN).ToList().ForEach(book =>
+            {
+                if(book.Count() > 1)
+                {
+                    Console.WriteLine("ISBN: "+ book.Key+" - Book count: "+book.Count());
+                    result = true;
+                }
             });
             return result;
         }
@@ -129,13 +138,17 @@ namespace Books.BLogic
         internal void GrpByGenre(List<Author> authors) // not working
         {
             Console.Clear();
-            authors.GroupBy(a => a.Genre).ToList().ForEach(a => {
-                Console.Write($"Genre: {a.Key} - Numero Libri: {a}");
+            var temp = authors.GroupBy(a => a.Genre).ToList();
+            temp.ForEach(a => {
+                Console.Write($"Genre: {a.Key} - Numero Libri: ");
+                int counter = 0;
                 foreach (var b in a)
                 {
-                    Console.WriteLine(b.Books.Count());
+                    foreach (var c in b.Books) {
+                        counter++;
+                    }
                 }
-                Console.WriteLine();
+                Console.WriteLine(counter);
             });
             Console.ReadLine();
         }
@@ -143,8 +156,7 @@ namespace Books.BLogic
         internal void WorstPrice(List<Author> authors)
         {
             Console.Clear();
-            var tempBook = authors.Select(a => new {Name = a.Name, Books= a.Books})
-                .Select(b => new {Name = b.Name, Book = b.Books.MaxBy(book => book.Price) });
+            var tempBook = authors.Select(b => new {Name = b.Name, Book = b.Books.MaxBy(book => book.Price) });
             List<Book> temp = [];
             foreach (var item in tempBook)
             {
@@ -156,7 +168,7 @@ namespace Books.BLogic
             foreach (var item in tempBook)
             {
                 if(temp2 == item.Book) {
-                    Console.WriteLine($"Name: {item.Name} - ISBN: {temp2.ISBN} - Price: {temp2.Price}");
+                    Console.WriteLine($"Author name: {item.Name} - Book name: {temp2.Name} - Price: {temp2.Price} - ISBN: {temp2.ISBN}");
                 }
             }
             Console.ReadLine();
