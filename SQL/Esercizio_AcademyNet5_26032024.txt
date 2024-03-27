@@ -1,0 +1,27 @@
+1) Nel Db AcademyNet5 aggiungere una nuova tabella, che gestisca
+le assenze ingiustificate (permessi, malattia, licenze matri,
+lutti,), così composta:
+	A) Uno a molti con EMployee
+	C) Tipo Assenza
+	D) Data Inizio
+	E) Data Fine
+	F) Ore Assenza (eventuali)
+	E) Descrizione Assenza
+1A) Popolare la nuova tabella con alcune righe e fare in modo che il celeberrimo Mario ROssi abbia preso
+quache permesso. Quindi creare una VIEW che visualizzi tutta la storia del nostro eroe.
+
+2) Si consideri il DB AdventureWorks, si realizzino le seguenti query:
+	A)Dalle tabelle seguenti, Person.Person & HumanResources.EmployeePayHistory,
+	scrivi una query in SQL per calcolare e visualizzare l'ultimo stipendio settimanale di 	ciascun 	dipendente.
+	Ritornare MODIFIEDDATE, convertito in data in formato italiano,
+	nome completo (nome, secondo nome e cognome) e stipendio settimanale (riferimento all'ultimo)
+	(40 ore settimanali) dei dipendenti. Ordinare l'output in ordine crescente su COMPLETENAME
+
+3) Si consideri  il DB AdventureWorksLT2019, si crei una stored procedure che agisca come segue:
+	A) RIchiedere tre parametri rispettivamente Data e ora, e ELiminazione (Si/No).
+	A1) Prevedere parametro OUTPUT che ritorni numero di righe eliminate
+	B) il parametro eliminazione deve essere nativamente uguale a no.
+	C) i tre parametri del punto A, saranno usati per eliminare le righe della tabella [ErrorLog].
+	D) Ne consegue che forse la tabella [ErrorLog], va modificata, per tenere traccia di data/ora di 	inserimento di un nuovo evento di log.
+	F) Creare una sp(?) che simuli e generi righe di eccezioni, di errore che andranno ad alimentare la
+	tabella [ErrorLog].
