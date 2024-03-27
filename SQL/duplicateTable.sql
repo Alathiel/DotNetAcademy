@@ -1,0 +1,1 @@
+Select * into Kane from Employees --crea copia table
