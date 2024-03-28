@@ -16,13 +16,18 @@ public class Program
         if (dbUtility.IsDbStatusValid) 
         {
             Console.WriteLine("Connesso con successo");
-            Console.WriteLine("Totale Customers: " + dbUtility.GetTotalCustomers());
-            customers = dbUtility.getCustomers();
-            customers.ForEach(c => { Console.WriteLine($"CustomerID: {c.CustomerId} - FirstName: {c.FirstName} - LastName: {c.LastName}"); });
-            //Console.WriteLine("Customers: ");
-            //customers.ForEach(x => Console.WriteLine(x.FirstName));
-            dbUtility.getCustomerByCompleteName("Dylan","Miller");
-            Console.WriteLine("Rows affected: "+dbUtility.UpdateCustomersByID(1, "Valerio"));
+            //Console.WriteLine("Totale Customers: " + dbUtility.GetTotalCustomers());
+           // customers = dbUtility.getCustomers();
+            //customers.ForEach(c => { Console.WriteLine($"CustomerID: {c.CustomerId} - FirstName: {c.FirstName} - LastName: {c.LastName}"); });
+            //Console.WriteLine("\nSearch customer based on first name and last name: ");
+           // dbUtility.getCustomerByCompleteName("Dylan","Miller");
+            Console.WriteLine("\nRighe aggiornate: "+dbUtility.UpdateCustomersByID(1, "Valerio"));
+            Console.WriteLine("\nRighe aggiornate: " + dbUtility.UpdateCustomersByID(1, "Valerio"));
+            Console.WriteLine("\nRighe aggiornate: " + dbUtility.UpdateCustomersByID(1, "Valerio"));
+            Console.WriteLine("\nRighe aggiornate: " + dbUtility.UpdateCustomersByID(1, "Valerio"));
+            Console.WriteLine("\nRighe aggiornate: " + dbUtility.UpdateCustomersByID(1, "Valerio"));
+            //Console.WriteLine("\nRighe eliminate: " + dbUtility.DeleteCustomerById(1));
+            Console.WriteLine("\nRighe inserite: " + dbUtility.InsertCustomer());
 
         }
         else
